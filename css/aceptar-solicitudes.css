@@ -1,0 +1,32 @@
+/* spacing */
+
+.container {
+    width: 80%;
+}
+
+#segundParte {
+    padding-top: 100px;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th:nth-child(1) {
+    width: 30%;
+}
+
+thead th:nth-child(2) {
+    width: 20%;
+}
+
+th,
+td {
+    padding: 20px;
+}
+
+#botones-principal {
+    border-top: 30px;
+}

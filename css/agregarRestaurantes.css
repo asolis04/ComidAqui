@@ -1,0 +1,122 @@
+.container {
+    width: 80%;
+}
+
+#segundParte {
+    padding-top: 225px;
+}
+
+.tituloRegistrarRestaurante {
+    width: 1021PX;
+    font-size: 45px;
+    /* display: flex;*/
+    /* justify-content: center;*/
+    background: #a8293c;
+    color: white;
+}
+
+.cajonDeAnadirRest {
+    height: 40px;
+    width: 1109px;
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-star;
+    border-bottom: 12px solid #a8293c;
+}
+
+.cajonDeAnadirRest a {
+    font-size: 27px;
+    width: 205px;
+    margin: 1px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}
+
+.error {
+    border: 2px solid #87b3df;
+}
+
+.cajonDeAnadirRest a:hover {
+    color: #a8293c;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s b957;
+}
+
+.formularioAgregarRestaurante {
+    width: 870px;
+    display: flex;
+    margin: -7px;
+    height: 434px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+
+.datosRestaurantes {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    height: 395px;
+}
+
+.formRestaurantes {
+    margin-bottom: 18px;
+}
+
+.checkboxRestaurantes {
+    width: 235px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 415px;
+    flex-direction: column;
+}
+
+#miFormularioRestaurantecheck {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.registarRestaurantes :hover {
+    color: #582e44;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s b957;
+}
+
+button#btnRegistar {
+    border-top: 2px solid #bd7344;
+    border-bottom: 2px solid #bd7344;
+    border-left: 5px solid #bd7344;
+    border-right: 5px solid #bd7344;
+    width: 87px;
+    height: 27px;
+    font-size: 16px;
+    border-radius: 12px;
+    background-color: #bd7344;
+}
+
+#sctFooter {
+    background-color: #8E7A3D;
+}
+
+footer div {
+    display: flex;
+    padding: 0px 30px 0px 30px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #8E7A3D;
+    width: 1286px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+footer div h2 {
+    text-align: center;
+}

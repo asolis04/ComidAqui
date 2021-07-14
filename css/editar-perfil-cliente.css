@@ -1,0 +1,58 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#all-contenido {
+    padding-top: 80px;
+}
+
+#headerPrincipal .inferior div h2 {
+    width: 200px;
+    height: 40px;
+    display: inline-block;
+}
+
+#headerPrincipal .inferior h4 {
+    width: 70px;
+    height: 30px;
+    margin: 15px 5px 0px 885px;
+    align-items: center;
+    display: inline;
+}
+
+#Lapiz {
+    float: left;
+    padding: 20px 15px 20px 15px;
+}
+
+#Usuario {
+    float: right;
+    padding: 5px 15px 5px 15px;
+    width: 400px;
+    height: 400px;
+    padding-bottom: 10px;
+}
+
+#sctForm {
+    align-items: center;
+    width: 500px;
+    margin: 0px 0px 20px 150px;
+    display: inline-block;
+}
+
+#EditarFoto {
+    float: right;
+    padding: 5px 150px 5px 15px;
+}
+
+footer div {
+    display: inline-block;
+    padding: 0px 30px 0px 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #8E7A3D;
+}
+
+footer div h2 {
+    text-align: center;
+}

@@ -1,0 +1,166 @@
+.container {
+    width: 80%;
+}
+
+.aside-navegacion {
+    height: 50px;
+    float: right;
+}
+
+.aside-contenido {
+    background: #ffff;
+    height: 1000px;
+    width: 75%;
+    float: left;
+}
+
+
+/*vivi usuarios*/
+
+.banner-principal {
+    background: #a8293c;
+    padding: 15px 20px 15px 20px;
+}
+
+
+/*vivi usuarios*/
+
+.banner-principal {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    align-self: center;
+    /*  flex: ;
+    color: #1f060a;
+    font-size: 16px;*/
+}
+
+
+/*Navigation*/
+
+.nav-menu a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.nav-menu ul {
+    list-style: none;
+}
+
+.nav-main {
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95px;
+    padding: 20px 0;
+}
+
+.nav-logo {
+    width: 180px;
+}
+
+
+/*Nav izquierda*/
+
+.nav-main ul {
+    display: flex;
+}
+
+.nav-main ul li {
+    padding: 10px
+}
+
+.nav-main ul.nav-menu-right {
+    margin-right: 50px;
+}
+
+.nav-main ul li a {
+    padding: 6px;
+}
+
+.nav-main ul li a:hover {
+    border-bottom: 2px solid #A8293C;
+}
+
+
+/*Navegacion lateral*/
+
+.navegacion ul {
+    width: 250px;
+    height: 100%;
+    list-style: none;
+    padding-bottom: 200px;
+}
+
+.navegacion .menu li.title-menu {
+    padding: 20px;
+    background: #f8f0d8;
+    color: #A8293C;
+    text-align: center;
+    font-size: 22px;
+}
+
+.navegacion .menu a {
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid #C6D0DA;
+    font-size: 22px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #575D69;
+}
+
+.navegacion .menu a:hover {
+    background: #798DA3;
+    color: #fff;
+}
+
+.navegacion .menu li span.icon-menu {
+    margin-right: 12px;
+}
+
+@media screen and (max-width: 320px) {
+    .navegacion ul {
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .aside {
+        flex: 1 0 0;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .side-navegacion {
+        order: 1;
+    }
+    .aside-contenido {
+        order: 3;
+    }
+    .footer {
+        order: 4;
+    }
+}
+
+body {
+    padding: 2em;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    border-radius: 8px;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+}
