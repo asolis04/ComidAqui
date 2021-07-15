@@ -7,12 +7,12 @@ const perfilCliente = document.querySelector('#cod-cliente-perfil')
 
 
 
-let usuarioSesion = JSON.parse(localStorage.getItem('usuarioConectado'));
-if (!usuarioSesion) {
+let usuarioSesionPerfiles = JSON.parse(localStorage.getItem('usuarioConectado'));
+if (!usuarioSesionPerfiles) {
     window.location.href = 'index.html';
 
 } else {
-    switch (usuarioSesion.rol) {
+    switch (usuarioSesionPerfiles.rol) {
         case 'administrador':
             perfilEncargado.classList.add('ocultar');
             perfilDueno.classList.add('ocultar');

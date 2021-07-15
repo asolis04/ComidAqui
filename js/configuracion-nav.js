@@ -19,14 +19,14 @@ const enlaceCerrar = document.querySelector('#enlaceCerrar');
 
 /*Para las funcionalidades */
 
-let usuarioSesion = JSON.parse(localStorage.getItem('usuarioConectado'));
+let usuarioSesionNav = JSON.parse(localStorage.getItem('usuarioConectado'));
 
 /*Ocultar los enlaces */
-if (!usuarioSesion) {
+if (!usuarioSesionNav) {
     window.location.href = 'index.html';
 
 } else {
-    switch (usuarioSesion.rol) {
+    switch (usuarioSesionNav.rol) {
         case 'encargado':
             enlaceUsuarios.classList.add('ocultar');
             enlaceAceptarUsuario.classList.add('ocultar');
@@ -35,7 +35,7 @@ if (!usuarioSesion) {
             enlaceConfigPlatos.classList.add('ocultar');
             enlaceComentarios.classList.add('ocultar');
             break;
-        case "dueno":
+        case 'dueno':
             enlaceUsuarios.classList.add('ocultar');
             enlaceAceptarUsuario.classList.add('ocultar');
             enlaceImpuesto.classList.add('ocultar');
