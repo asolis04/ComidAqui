@@ -215,12 +215,13 @@ color: #000;
 
 
 .tiempoDeR{
-    width: 1399px;
+    width: 759px;
     height:  243px;;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    border-top: 12px solid #a8293c;
 
 }
 #txtTiempo{
