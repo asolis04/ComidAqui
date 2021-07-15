@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="css/editarRestaurantes.css">
+        <link href="https://icons8.com/icon/dmmKDmS3gJGy/búsqueda">Búsqueda icon by Icons8</link>
+         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+        <title>Editar Restaurante</title>
+    </head>
+    
+    <body>
+        <div class="container">
+            <!--Menu principal-->
+            <header class="header">
+                <nav class="nav-main">
+                    <img src="img/Logo (2).png" alt="ComidAqui Logo" class="nav-logo">
+                    <ul class="nav-menu">
+                        <li>
+                            <a href="/Pagina-inicio-cliente.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#restaurantes">Restaurantes</a>
+                        </li>
+                        <li>
+                            <a href="#favoritos">Favoritos</a>
+                        </li>
+                        <li>
+                            <a href="#recientes">Recientes</a>
+                        </li>
+                        <li>
+                            <a href="#unase">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="perfil-cliente.html">Perfil</a>
+                        </li>
+                        <li>
+                            <a href="index.html" id="Cerrar-Sesion">Cerrar Sesión</a>
+                        </li>
+                    </ul>
+    
+                </nav>
+                <div class="tituloComentarios">
+                    <h2> Restaurantes </h2>
+                </div>
+            </header>
+            <aside class="aside-navegacion">
+                <nav class="navegacion">
+                    <ul class="menu">
+                        <!-- TITULAR -->
+                        <li class="title-menu"></li>
+                        <!-- TITULAR -->
+                        <li class="item-submenu" menu="1">
+                            <ul class="submenu">
+                                 <li><a href="agregarRestaurantes.html">Restaurantes</a></li>
+                                <li><a href="gerentes.html">Gerentes </a></li>
+                                <li><a href="">Menús</a></li>
+                                <li> <a href="">Reportes</a></li>
+                            </ul>
+                        </li>
+    
+                    </ul>
+                </nav>
+            </aside>
+
+               <aside class="aside-contenido">
+                <div class="cajonDeAnadirRest">
+                    <a href="agregarRestaurantes.html">Agregar</a>
+                    <a href="editarRestaurantes.html">Editar</a>
+                </div>
+             <section id="sct-usuarios">
+
+                <div class="buscar">
+                    <label for="txt-filtro"></label>
+                    <input type="text" id="txt-filtro" placeholder="Buscar restaurante" >
+                </div>
+
+                <table id="tbl-usuarios">
+                    <thead>
+                        <tr>
+                           
+                    <th>Nombre del restaurante</th>
+                  
+                        </tr>
+                    </thead>
+                    <tbody>
+        
+                    </tbody>
+                </table>
+        
+            </section>
+       
+                      
+            </aside>
+           
+        <script src="js/editarRestaurantes.js"></script>
+         <script src="js/listaDeRestaurantes.js"></script>
+        
+        </body>
+        <footer class="footer">
+                <section class="social">
+    
+                    <section class="sctFooter">
+                        <div>
+                            <h2>Contacto</h2>
+                            <div>
+                                <p>Teléfono</p>
+                                <p>22954703</p>
+                            </div>
+                            <div>
+                                <p>Correo</p>
+                                <p>comidaqui@gmail.com</p>
+                            </div>
+                            <div>
+                                <p>Redes sociales</p>
+                                <p>Próximamente</p>
+                            </div>
+                        </div>
+                    </section>
+    
+                
+            </footer>
+    
+    
+        </div>
+        </html>

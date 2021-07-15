@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="css/gerentes.css">
+        
+         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+        <title>Gerentes</title>
+    </head>
+    <body>
+        <header class="header">
+                <nav class="nav-main">
+                    <img src="img/logoComidAqui.png" alt="ComidAqui Logo" class="nav-logo">
+                    <ul class="nav-menu">
+                        <li>
+                            <a href="/Pagina-inicio-cliente.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="perfil-cliente.html">Perfil</a>
+                        </li>
+                        <li>
+                            <a href="index.html" id="Cerrar-Sesion">Cerrar Sesión</a>
+                        </li>
+                    </ul>
+    
+                </nav>
+            </header>
+        <div class="container">
+            <!--Menu principal-->
+            
+            <aside class="aside-navegacion">
+                <nav class="navegacion">
+                    <ul class="menu">
+                      
+                        <li class="item-submenu" menu="1">
+                            <ul class="submenu">
+                                <li><a href="agregarRestaurantes.html">Restaurantes</a></li>
+                                <li><a href="gerentes.html">Gerentes</a></li>
+                                <li><a href="">Menús</a></li>
+                                <li><a href="">Reportes</a></li>
+                            </ul>
+                        </li>
+    
+                    </ul>
+                </nav>
+            </aside>
+            <aside class="aside-contenido">
+
+            </section><div class="tituloRegistrarRestaurante">
+                <h2>Registro de Gerente </h2>
+            </div>
+            <section class="registarGerentes">
+                <form class="datosGerentes">
+                    <div class="formGerentes">
+                        <label for="txtNombreCompleto">Nombre Completo:</label>
+                        <input type="text" id="txtNombreCompleto" required>
+                    </div>
+                     <div class="formGerentes">
+                        <label form="txtCorreoElectrónico">Correo Electrónico:</label>
+                        <input type="email" id="txtCorreoElectrónico">
+                    </div>
+                    <div class="formGerentes">
+                        <label for="txtRestauranteAsignado">Restaurante Asignado:</label>
+                        <input type="text" id="txtRestauranteAsignado" required>
+                    </div>
+                    <div class="formGerentes">
+                        <button type="button" id="btnRegistar">Registrar</button>
+                    </div>
+                </form>
+            </section>
+              </header> 
+            <div class="listaGerentes">
+           <h2> Mis gerentes </h2>
+            </div>
+
+          <section id="sct-usuarios">
+       
+        <table id="tbl-usuarios">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Restaurante</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </section>
+            </aside>
+
+            <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+         <script src="js/gerentesListarR.js"> </script> 
+        <script src="js/gerentesRegistrados.js"></script>
+        <script src="js/gerentesGuardados.js"></script>
+    </body>
+   
+    
+</html>
