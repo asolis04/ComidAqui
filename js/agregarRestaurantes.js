@@ -122,6 +122,12 @@ const validar=() =>{
             input.classList.remove('error');
         }
     });
+    if (error == false) {
+        Swal.fire({
+            icon: 'success',
+            title: 'Se agregó correctamente el restaurante '
+        })
+    }
     if (error == true) {
         Swal.fire({
             'icon': 'warning',
@@ -133,10 +139,7 @@ const validar=() =>{
         });
     } else {
         obtenerDatos();
-        validarCredenciales(inputNombreComercial.value, inputCedulaJuridica.value,inputNombreJurídico.value,inputCorreoElectrónico.value
-            ,inputNombreComercial.value,inputNombreComercial.value,inputNombreComercial.value,inputNombreComercial.value,inputNombreComercial.value,
-            inputAforo.value,inputTeléfono.value,inputDireccion.value,inputProvincia.value,inputDistrito.value,inputCantón.value,inputAbre.value,inputCierra.value,
-            );
+      
    
 
     }
@@ -144,6 +147,7 @@ const validar=() =>{
     
     
     };
+    
     
     
     // forma mas aactual de crear una funciom
@@ -177,5 +181,3 @@ const validar=() =>{
   
     //evento , cuando al boton se le da click se ejecuta la funcion de obtener datos 
     btnRegistar.addEventListener('click',validar);// aqui 
-
-    

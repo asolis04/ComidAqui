@@ -32,6 +32,12 @@ const validar=() =>{
             input.classList.remove('error');
         }
     });
+    if (error == false) {
+        Swal.fire({
+            icon: 'success',
+            title: 'Se agregó correctamente el Gerente '
+        })
+    }
     if (error == true) {
         Swal.fire({
             'icon': 'warning',

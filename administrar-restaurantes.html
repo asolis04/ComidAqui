@@ -1,243 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="css/agregarRestaurantes.css">
+         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+        <title>Registrar Restaurante</title>
+    </head>
+    
+    <body>
+        <div class="container">
+            <!--Menu principal-->
+            <header class="header">
+                <nav class="nav-main">
+                    <img src="img/Logo (2).png" alt="ComidAqui Logo" class="nav-logo">
+                    <ul class="nav-menu">
+                        <li>
+                            <a href="/Pagina-inicio-cliente.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="perfil-cliente.html">Perfil</a>
+                        </li>
+                        <li>
+                            <a href="index.html" id="Cerrar-Sesion">Cerrar Sesión</a>
+                        </li>
+                    </ul>
+    
+                </nav>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ComidaAqui</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <!--FONT AWESOME-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!--Custom CSS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
-    <!--Custom-->
-    <link rel="stylesheet" href="css/configuracion-plantilla.css">
-    <link rel="stylesheet" href="css/pagina-principal.css">
-    <link rel="stylesheet" href="css/agregarRestaurantes.css">
-    <link rel="stylesheet" href="css/editarRestaurantes.css">
-
-
-</head>
-
-<body>
-    <div class="container">
-        <header>
-            <nav class="nav-main">
-                <img src="img/logoComidAqui.png" alt="ComidAqui Logo" class="nav-logo">
-                <ul class="nav-menu">
-                    <li>
-                        <a href="perfiles.html">Perfil</a>
-                    </li>
-                    <li>
-                        <a href="/configuracion-plantilla.html">Configuración</a>
-                    </li>
-                    <li>
-                        <a id="enlaceCerrar">Cerrar Sesión</a>
-                    </li>
-                </ul>
-                <!-- Right Nav -->
-
-            </nav>
-        </header>
-
-
-        <nav class="menu">
-            <ul>
-                <li><a href="/admin-usuarios.html" id="adm-usuarios">Adm. Usuarios</a></li>
-                <li><a href="/aceptar-solicitudes.html" id="aceptar-usuarios">Aceptar Usuario</a></li>
-                <li><a href="/impuestos.html" id="admin-impuestos">Impuesto</a></li>
-                <li><a href="/tiempoDeReserva.html" id="admin-tiempoReserva">Tiempo de Reserva</a></li>
-                <li><a href="/clasificacion-platos.html" id=configuracion-platos>Configuración de Platos</a></li>
-                <li><a href="/registrar-platos.html" id="registrar-platos">Registrar Platos</a></li>
-                <li><a href="/registro-menu.html" id="admin-menu">Menú</a></li>
-                <li><a href="/administrar-restaurantes.html" id="admin-restaurante">Restaurantes</a></li>
-                <li><a href="/agregar-encargado.html" id="admin-gerente">Agregar Encargado</a></li>
-                <li><a href="/administrar-comentario.html" id="admin-comentarios">Comentarios</a></li>
-                <li><a href="/reportes.html" id="admin-reportes">Reportes</a></li>
-            </ul>
-        </nav>
-
-        <article id="principal">
+            </header>
             <div class="tituloRegistrarRestaurante">
                 <h2>Agregar restaurantes </h2>
             </div>
-            <nav class="nav-main">
-                <ul class="nav-menu">
-                    <li>
-                        <input id="boton-config" type="button" value="Agregar">
-                    </li>
-                    <li>
-                        <input id="boton-listar" type="button" value="Listar">
-                    </li>
-                    <!--     <li>
-                        <a id="boton-activar" href="#">Activar</a>
-                    </li>
-                    <li>
-                        <a id="boton-desactivar" href="#">Desactivar</a>
-                    </li>
-                    <li>
-                        <a id="boton-eliminar" href="#">Eliminar</a>
-                    </li>
-                </ul>
-                Right Nav -->
-
-            </nav>
-
-            <div id="segundParte">
-
-                <div id="conf-restaurantes">
-                    <aside class="aside-contenido">
-                        <section class="formularioAgregarRestaurante">
-
-                            <form class="datosRestaurantes">
-                                <div class="formRestaurantes">
-                                    <label for="txtNombreComercial">Nombre Comercial:</label>
-                                    <input type="text" id="txtNombreComercial" required>
-                                </div>
-                                <div class="formRestaurantes">
-                                    <label form="txtCedulaJuridica">Cédula Jurídica:</label>
-                                    <input type="number" id="txtCedulaJuridica">
-                                </div>
-                                <div class="formRestaurantes">
-                                    <label for="txtNombreJurídico">Nombre Jurídico:</label>
-                                    <input type="text" id="txtNombreJurídico" required>
-                                </div>
-                                <div class="formRestaurantes">
-                                    <label form="txtCorreoElectrónico">Correo Electrónico:</label>
-                                    <input type="email" id="txtCorreoElectrónico">
-                                </div>
-                                <div class="formRestaurantes">
-                                    <label form="txtAforo">Aforo:</label>
-                                    <input type="number" id="txtAforo">
-                                </div>
-                                <div class="formRestaurantes">
-                                    <label form="txtTeléfono">Teléfono:</label>
-                                    <input type="number" id="txtTeléfono">
-                                </div>
-                                <div class="formRestaurantes">
-                                    <label for="txtDireccion">Dirección:</label>
-                                    <input type="text" id="txtDireccion" required>
-                                </div>
-                                <div class="formRestaurantes">
-                                    <label for="txtProvincia ">Provincia :</label>
-                                    <input type="text" id="txtProvincia" required>
-                                </div>
-                                <div class="formRestaurantes">
-                                    <label for="txtDistrito">Distrito:</label>
-                                    <input type="text" id="txtDistrito" required>
-                                </div>
-                                <div class="formRestaurantes">
-                                    <label for="txtCantón ">Cantón :</label>
-                                    <input type="text" id="txtCantón" required>
-                                </div>
-                            </form>
-
-                            <div class="checkboxRestaurantes">
-
-                                <form id="miFormularioRestaurantecheck">
-                                    <p>Horario:</p>
-                                    <label for="txtDomingo">Domingo</label>
-                                    <input type="checkbox" id="Domingo" name="Domingo" class="checkbox" value="Domingo"><br>
-
-                                    <label for="txtLunes"> Lunes</label>
-                                    <input type="checkbox" id="Lunes" name="Lunes" class="checkbox" value="Lunes"><br>
-
-
-                                    <label for="txtMartes">Martes</label>
-                                    <input type="checkbox" id="Martes" name="Martes" class="checkbox" value="Martes"><br>
-
-                                    <label for="txtMiércoles">Miércoles</label>
-                                    <input type="checkbox" id="Miércoles" name="Miércoles" class="checkbox" value="Miércoles"><br>
-
-                                    <label for="txtJueves">Jueves</label>
-                                    <input type="checkbox" id="Jueves" name="Jueves" class="checkbox" value="Jueves"><br>
-
-                                    <label for="txtViernes">Viernes</label>
-                                    <input type="checkbox" id="Viernes" name="Viernes" class="checkbox" value="Viernes"><br>
-
-                                    <label for="txtSábado">Sábado</label>
-                                    <input type="checkbox" id="Sábado" name="Sábado" class="checkbox" value="Sábado"><br>
-
-                                    <div class="formRestaurantes">
-                                        <label for="txtAbre ">Abre</label>
-                                        <input type="text" id="txtAbre" required>
-                                        <label for="txtCierra">Cierra:</label>
-                                        <input type="text" id="txtCierra" required>
-                                    </div>
-
-                                </form>
-                            </div>
-
-
-                            <div class="registarRestaurantes">
-                                <div id="botones-principal">
-                                    <button type="button" id="btnRegistar">Registrar</button>
-
-                                </div>
-
-                            </div>
-
-                        </section>
-
-
-
-                    </aside>
-
-
+            <aside class="aside-navegacion">
+                <nav class="navegacion">
+                    <ul class="menu">
+                        <!-- TITULAR -->
+                        <li class="title-menu"></li>
+                        <!-- TITULAR -->
+                        <li class="item-submenu" menu="1">
+                            <ul class="submenu">
+                                 <li><a href="agregarRestaurantes.html">Restaurantes</a></li>
+                                <li><a href="gerentes.html">Gerentes </a></li>
+                                <li><a href="">Menús</a></li>
+                                <li> <a href="">Reportes</a></li>
+                            </ul>
+                        </li>
+    
+                    </ul>
+                </nav>
+            </aside>
+            <aside class="aside-contenido">
+                <div class="cajonDeAnadirRest">
+                    <a href="agregarRestaurantes.html">Agregar</a>
+                    <a href="editarRestaurantes.html">Editar</a>
                 </div>
-
-                <div id="listar-restau" class="listarRestau">
-
-                    <aside class="aside-contenido">
-                        <div class="cajonDeAnadirRest">
-                            <a href="agregarRestaurantes.html">Agregar</a>
-                            <a href="editarRestaurantes.html">Editar</a>
+            </header> 
+    
+            <section class="formularioAgregarRestaurante">
+                    <form class="datosRestaurantes">
+                        <div class="formRestaurantes">
+                            <label for="txtNombreComercial">Nombre Comercial:</label>
+                            <input type="text" id="txtNombreComercial" required>
                         </div>
-                        <section id="sct-usuarios">
-
-                            <div class="buscar">
-                                <label for="txt-filtro"></label>
-                                <input type="text" id="txt-filtro" placeholder="Buscar restaurante">
+                        <div class="formRestaurantes">
+                            <label form="txtCedulaJuridica">Cédula Jurídica:</label>
+                            <input type="number" id="txtCedulaJuridica">
+                        </div>
+                        <div class="formRestaurantes">
+                            <label for="txtNombreJurídico">Nombre Jurídico:</label>
+                            <input type="text" id="txtNombreJurídico" required>
+                        </div>
+                        <div class="formRestaurantes">
+                            <label form="txtCorreoElectrónico">Correo Electrónico:</label>
+                            <input type="email" id="txtCorreoElectrónico">
+                        </div>
+                        <div class="formRestaurantes">
+                            <label form="txtAforo">Aforo:</label>
+                            <input type="number" id="txtAforo">
+                        </div>
+                        <div class="formRestaurantes">
+                            <label form="txtTeléfono">Teléfono:</label>
+                            <input type="number" id="txtTeléfono">
+                        </div>
+                        <div class="formRestaurantes">
+                            <label for="txtDireccion">Dirección:</label>
+                            <input type="text" id="txtDireccion" required>
+                        </div>
+                        <div class="formRestaurantes">
+                            <label for="txtProvincia ">Provincia :</label>
+                            <input type="text" id="txtProvincia" required>
+                        </div>
+                        <div class="formRestaurantes">
+                            <label for="txtDistrito">Distrito:</label>
+                            <input type="text" id="txtDistrito" required>
+                        </div>
+                        <div class="formRestaurantes">
+                            <label for="txtCantón ">Cantón :</label>
+                            <input type="text" id="txtCantón" required>
+                        </div>
+     </form>
+    
+                            <div class="checkboxRestaurantes">
+    
+                        <form id="miFormularioRestaurantecheck"  >
+                            <p>Horario:</p>
+                            
+                            <label for="txtDomingo">Domingo</label>
+                            <input type="checkbox" id="Domingo"  name="Domingo" class="checkbox" value="Domingo" ><br>
+                            
+                            <label for="txtLunes"> Lunes</label>
+                            <input type="checkbox" id="Lunes" name="Lunes" class="checkbox" value="Lunes" ><br>
+                            
+                            
+                            <label for="txtMartes">Martes</label>
+                            <input type="checkbox" id="Martes"name="Martes" class="checkbox" value="Martes" ><br> 
+                        
+                            <label for="txtMiércoles">Miércoles</label>
+                            <input type="checkbox" id="Miércoles" name="Miércoles" class="checkbox" value="Miércoles" ><br>
+                        
+                            <label for="txtJueves">Jueves</label>
+                            <input type="checkbox" id="Jueves"name="Jueves" class="checkbox" value="Jueves" ><br> 
+                        
+                            <label for="txtViernes">Viernes</label>
+                            <input type="checkbox" id="Viernes" name="Viernes" class="checkbox" value="Viernes" ><br>
+                        
+                            <label for="txtSábado">Sábado</label>
+                            <input type="checkbox" id="Sábado" name="Sábado" class="checkbox" value="Sábado" ><br>
+                          
+                            
+                         
+                            
+    
+                            <div class="formRestaurantes">
+                                   <label for="txtAbre ">Abre</label>
+                                <input type="text" id="txtAbre" required>
+                               <label for="txtCierra">Cierra:</label>
+                                <input type="text" id="txtCierra" required>
                             </div>
-
-                            <table id="tbl-usuarios">
-                                <thead>
-                                    <tr>
-
-                                        <th>Nombre del restaurante</th>
-
-                                    </tr>
-                                </thead>
-                                <tbody>
-
-                                </tbody>
-                            </table>
-
-                        </section>
+    
+                       </form>
+                       </div>
+    
+    
+                       <div class="registarRestaurantes">
+                        <button type="button" id="btnRegistar">Registrar</button>
+                        <a href="agregarRestaurantes.html" ><button type="reset" id="Borrar">Borrar</button></a>
+                       
+                    </div>
+                   
+            </section>
 
 
-                    </aside>
-
-                </div>
-            </div>
-            <!--Config-->
-    </div>
-    </article>
-    </div>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!--ScrollReveal-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <!--Script-->
-    <script src="/js/configuracion-nav.js"></script>
-    <script src="/js/agregarRestaurantes.js"></script>
-    <script src="/js/editarRestaurantes.js"></script>
-    <script src="/js/listaDeRestaurantes.js"></script>
-
-
-</body>
-
+                
+            </aside>
+            
+    
+    
+        </div>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/agregarRestaurantes.js"></script>
+    </body>
+    <footer class="footer">
+                <section class="social">
+    
+                    <section class="sctFooter">
+                        <div>
+                            <h2>Contacto</h2>
+                            <div>
+                                <p>Teléfono</p>
+                                <p>22954703</p>
+                            </div>
+                            <div>
+                                <p>Correo</p>
+                                <p>comidaqui@gmail.com</p>
+                            </div>
+                            <div>
+                                <p>Redes sociales</p>
+                                <p>Próximamente</p>
+                            </div>
+                        </div>
+                    </section>
+    
+                
+            </footer>
 </html>

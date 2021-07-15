@@ -225,6 +225,17 @@
       background-color: #bd7344;
   
     }
+     button#Borrar{
+      border-top: 2px solid #bd7344;
+      border-bottom: 2px solid #bd7344;
+      border-left: 5px solid #bd7344;
+      border-right: 5px solid #bd7344;
+      width: 87px;
+      height: 27px;
+      font-size: 16px;  
+      border-radius: 12px;
+      background-color: #bd7344;
+    }
     .listaGerentes h2{
       font-size: 24px;
       text-decoration: underline #d7b957 solid 3px;
