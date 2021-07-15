@@ -1,0 +1,96 @@
+        /*Estilos Generados*/
+        
+        * {
+            box-sizing: content-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+         :focus {
+            outline: none;
+        }
+        /*Para toda la página*/
+        
+        body {
+            color: #000000;
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 16px;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            background: #ffff;
+        }
+        /*Navigation*/
+        
+        .nav-menu a {
+            color: #000000;
+            text-decoration: none;
+        }
+        
+        .nav-menu ul {
+            list-style: none;
+        }
+        
+        .nav-main {
+            font-size: 17px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 95px;
+            padding: 20px 0;
+        }
+        
+        .nav-logo {
+            width: 180px;
+        }
+        /*Nav izquierda*/
+        
+        .nav-main ul {
+            display: flex;
+        }
+        
+        .nav-main ul li {
+            padding: 10px
+        }
+        
+        .nav-main ul.nav-menu-right {
+            margin-right: 50px;
+        }
+        
+        .nav-main ul li a {
+            padding: 6px;
+        }
+        
+        .nav-main ul li a:hover {
+            border-bottom: 2px solid #A8293C;
+        }
+        
+        .footer {
+            color: #1f060a;
+            font-size: 12px;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        
+        .ocultar {
+            display: none;
+        }
+        /*General*/
+        
+        #FotoUsuario {
+            width: 200px;
+            height: 200px;
+            padding-bottom: 10px;
+        }
+        
+        #divFoto p {
+            display: flex;
+            justify-content: center;
+            font-size: 32px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            font-weight: bold;
+            color: #A8293C;
+        }

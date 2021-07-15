@@ -1,0 +1,35 @@
+.container {
+    width: 80%;
+}
+
+.aside-contenido h2 {
+    text-align: center;
+}
+
+#sctForm {
+    align-items: center;
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-block;
+}
+
+#btnRegistrar {
+    background: #D7B957;
+    border: 3px solid #D7B957;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+}
+
+#btnRegistrar :hover {
+    background-color: #fff;
+    color: #D7B957;
+}
+
+.error {
+    border: 2px solid #582E44;
+}
