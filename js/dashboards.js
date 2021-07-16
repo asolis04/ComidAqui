@@ -17,10 +17,10 @@ const correoPerfilDueno = document.querySelector('#correoPerfilDueno');
 const fechaNacimientoPerfilDueno = document.querySelector('#fechaNacimientoPerfilDueno');
 const cedualPerfilDueno = document.querySelector('#cedualPerfilDueno');
 
+let usuarioSesion = JSON.parse(localStorage.getItem('usuarioConectado'));
 
 
-
-/*Super Admin */
+/*Super Admin*/
 elementoNombreUsuario.innerText = usuarioConectado.nombre;
 correoPerfil.innerText = usuarioConectado.correo;
 fechaNacimientoPerfil.innerText = usuarioConectado.fechaNacimiento;
@@ -35,3 +35,5 @@ nombrePerfilDueno.innerText = usuarioConectado.nombre;
 correoPerfilDueno.innerText = usuarioConectado.correo;
 fechaNacimientoPerfilDueno.innerText = usuarioConectado.fechaNacimiento;
 cedualPerfilDueno.innerText = usuarioConectado.cedula;
+
+console.log(usuarioSesion);
