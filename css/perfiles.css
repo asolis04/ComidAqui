@@ -16,7 +16,45 @@
             font-family: 'Noto Sans', sans-serif;
             font-size: 16px;
         }
+        #sctFooter {
+            background-color: #8E7A3D;
+        }
         
+        footer div {
+            display: flex;
+            padding: 0px 30px 0px 30px;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: #8E7A3D;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            width: 1289px;
+        }
+        
+        
+        footer div h2 {
+            text-align: center;
+        }
+        
+        
+        #sctInformacionPerfil{
+            color:#000;
+        }
+        #sctInformacionPerfil table td a:hover{
+            color: #d7b957;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            transition: all .5s b957;
+        }
+        #sctInformacionPerfil table td a{
+            color: #000;
+            text-align: center;
+            font-size: 16px;
+            border:0px;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
         .container {
             width: 80%;
             margin: auto;
@@ -70,12 +108,7 @@
             border-bottom: 2px solid #A8293C;
         }
         
-        .footer {
-            font-size: 20px;
-            text-align: center;
-            padding-bottom: 50px;
-            margin-bottom: 50%;
-        }
+       
         
         .ocultar {
             display: none;

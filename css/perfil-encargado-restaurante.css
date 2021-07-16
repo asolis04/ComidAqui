@@ -108,11 +108,14 @@ main div p {
 }
 
 footer div {
-    display: inline-block;
+    display: flex;
     padding: 0px 30px 0px 30px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: #8E7A3D;
+    flex-wrap: wrap;
+    flex-direction: row;
+
 }
 
 footer div h2 {
