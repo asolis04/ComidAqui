@@ -52,9 +52,9 @@ let listaUsuarios = [{
         rol: 'cliente',
         estado: 2,
         favoritos: {
-            nombre: 'Nuestra Tierra',
-            nombre: 'Tin Jo',
-            nombre: 'La Parillita'
+            restauranteUno: 'Nuestra Tierra',
+            restauranteDos: 'Tin Jo',
+            restauranteTres: 'La Parillita'
         }
     },
     {
