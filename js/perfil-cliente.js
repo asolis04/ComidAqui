@@ -15,8 +15,8 @@ nombrePerfilCliente.innerText = usuarioConectado.nombre;
 correoPerfilCliente.innerText = usuarioConectado.correo;
 fechaNacimientoPerfilCliente.innerText = usuarioConectado.fechaNacimiento;
 cedualPerfilCliente.innerText = usuarioConectado.cedula;
-restauranteUno.innerText = usuarioConectado.favoritos[0];
-restauranteDos.innerText = usuarioConectado.favoritos[1];
-restauranteTres.innerText = usuarioConectado.favoritos[2];
+restauranteUno.innerText = usuarioConectado.restauranteUno;
+restauranteDos.innerText = usuarioConectado.restauranteDos;
+restauranteTres.innerText = usuarioConectado.restauranteTres;
 
-console.log(usuarioConectado.favoritos)
+console.log(usuarioConectado.favoritos.restauranteUno)

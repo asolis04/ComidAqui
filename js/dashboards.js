@@ -1,3 +1,4 @@
+'use strict';
 /*Super Admin */
 const elementoNombreUsuario = document.querySelector('#nombrePerfil')
 const correoPerfil = document.querySelector('#correoPerfiles');
@@ -21,19 +22,19 @@ let usuarioSesion = JSON.parse(localStorage.getItem('usuarioConectado'));
 
 
 /*Super Admin*/
-elementoNombreUsuario.innerText = usuarioConectado.nombre;
-correoPerfil.innerText = usuarioConectado.correo;
-fechaNacimientoPerfil.innerText = usuarioConectado.fechaNacimiento;
-cedulaPerfil.innerText = usuarioConectado.cedula;
+elementoNombreUsuario.innerText = usuarioSesion.nombre;
+correoPerfil.innerText = usuarioSesion.correo;
+fechaNacimientoPerfil.innerText = usuarioSesion.fechaNacimiento;
+cedulaPerfil.innerText = usuarioSesion.cedula;
 /*Encargado */
-NombreUsuarioEncargado.innerText = usuarioConectado.nombre;
-correoPerfilEncfargado.innerText = usuarioConectado.correo;
-fechaNacimientoPerfilEncargado.innerText = usuarioConectado.fechaNacimiento;
-cedulaPerfilEncargado.innerText = usuarioConectado.cedula;
+NombreUsuarioEncargado.innerText = usuarioSesion.nombre;
+correoPerfilEncfargado.innerText = usuarioSesion.correo;
+fechaNacimientoPerfilEncargado.innerText = usuarioSesion.fechaNacimiento;
+cedulaPerfilEncargado.innerText = usuarioSesion.cedula;
 /*Dueño */
-nombrePerfilDueno.innerText = usuarioConectado.nombre;
-correoPerfilDueno.innerText = usuarioConectado.correo;
-fechaNacimientoPerfilDueno.innerText = usuarioConectado.fechaNacimiento;
-cedualPerfilDueno.innerText = usuarioConectado.cedula;
+nombrePerfilDueno.innerText = usuarioSesion.nombre;
+correoPerfilDueno.innerText = usuarioSesion.correo;
+fechaNacimientoPerfilDueno.innerText = usuarioSesion.fechaNacimiento;
+cedualPerfilDueno.innerText = usuarioSesion.cedula;
 
 console.log(usuarioSesion);

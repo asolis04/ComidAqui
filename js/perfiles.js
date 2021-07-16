@@ -7,12 +7,12 @@ const perfilCliente = document.querySelector('#cod-cliente-perfil')
 
 
 
-let usuarioSesionPerfiles = JSON.parse(localStorage.getItem('usuarioConectado'));
-if (!usuarioSesionPerfiles) {
+let usuarioConectado = JSON.parse(localStorage.getItem('usuarioConectado'));
+if (!usuarioConectado) {
     window.location.href = 'index.html';
 
 } else {
-    switch (usuarioSesionPerfiles.rol) {
+    switch (usuarioConectado.rol) {
         case 'administrador':
             perfilEncargado.classList.add('ocultar');
             perfilDueno.classList.add('ocultar');
@@ -26,7 +26,6 @@ if (!usuarioSesionPerfiles) {
             perfilSuperAdmin.classList.add('ocultar');
     }
 }
-
 
 
 /*
