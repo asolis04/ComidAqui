@@ -7,6 +7,13 @@ const inputCedula = document.querySelector('#txtCedula');
 const inputContrasenha = document.querySelector('#txtContrasenha');
 const btnGuardar = document.querySelector('#btnGuadar');
 
+let usuarioSesion = JSON.parse(localStorage.getItem('usuarioConectado'));
+
+
+
+
+
+
 const validar = () => {
 
     let error = false;
@@ -85,3 +92,11 @@ const obtenerDatos = () => {
 };
 //evento , cuando al boton se le da click se ejecuta la funcion de obtener datos 
 btnGuardar.addEventListener('click', validar);
+
+inputNombre.innerText = usuarioSesion.nombre;
+inputCorreo.innerText = usuarioSesion.correo;
+inputFechaNacimiento.innerText = usuarioSesion.fechaNacimiento;
+/*inputTipoCedula.innerText = usuarioSesion.cedula;*/
+inputContrasenha.innerText = usuarioSesion.nombre;
+
+console.log(usuarioSesion);
