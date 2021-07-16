@@ -100,8 +100,8 @@ const obtenerPlatos = () => {
 const inputNombre = document.querySelector('#txtNombre');
 const inputDescripcion = document.querySelector('#txtDescripcion');
 const inputPrecio = document.querySelector('#txtPrecio');
-const inputCaracEspeciales = document.querySelectorAll('#txtCaracEspeciales');
-const inputClasificacion = document.querySelectorAll('#txtClasificacion');
+const inputCaracEspeciales = document.querySelector('#txtCaracEspeciales');
+const inputClasificacion = document.querySelector('#txtClasificacion');
 const btnRegistrar = document.querySelector('#btnRegistrar');
 
 const validar = () => {
@@ -117,7 +117,6 @@ const validar = () => {
         error = true;
         inputDescripcion.classList.add('error');
     } else inputDescripcion.classList.remove('error');
-
 
     if (inputPrecio.value == "") {
         error = true;
