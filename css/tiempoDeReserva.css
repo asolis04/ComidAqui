@@ -94,7 +94,7 @@
         /*Navegacion lateral*/
         
         .navegacion ul {
-            width: 250px;
+            width: 220px;
             height: 100%;
             list-style: none;
             padding-bottom: 200px;
@@ -115,17 +115,18 @@
             font-size: 22px;
             font-weight: 200;
             text-decoration: none;
-            color: #575D69;
+          color: #A8293C;
         }
         
         .navegacion .menu a:hover {
-            background: #798DA3;
-            color: #fff;
+    
+            background: linear-gradient(#D7B957, #f8f0d8);
         }
         
         .navegacion .menu li span.icon-menu {
             margin-right: 12px;
         }
+        
         
         @media screen and (max-width: 320px) {
             .navegacion ul {
