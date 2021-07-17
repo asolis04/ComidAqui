@@ -1,77 +1,3 @@
-body {
-    font-family: 'Noto Sans', sans-serif;
-}
-
-#headerPrincipal {
-    height: 180px;
-    padding: 0 1%;
-}
-
-.container {
-    width: 80%;
-}
-
-
-/* Header: parte superior */
-
-#headerPrincipal .superior {
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
-    border: 1px solid #A8293C;
-}
-
-#headerPrincipal .superior nav {
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    padding: 25px;
-}
-
-#headerPrincipal .superior nav a {
-    font-weight: bold;
-    color: #000000;
-    text-decoration: none;
-}
-
-#headerPrincipal .superior nav a:hover {
-    color: #A8293C;
-    text-decoration: none;
-}
-
-
-/* Header: parte inferior */
-
-#headerPrincipal .inferior {
-    display: flex;
-    background-color: #BD7344;
-    height: 75px;
-}
-
-#headerPrincipal .inferior div h2 {
-    width: 200px;
-    height: 40px;
-    display: inline-block;
-}
-
-#headerPrincipal .inferior h4 {
-    width: 70px;
-    height: 30px;
-    margin: 15px 5px 0px 880px;
-    align-items: center;
-    display: inline;
-}
-
-#Menu {
-    float: left;
-    padding: 20px 15px 20px 15px;
-}
-
-#Usuario {
-    float: right;
-    padding: 5px 15px 5px 15px;
-}
-
 #sctForm {
     align-items: center;
     width: 500px;
@@ -80,19 +6,39 @@ body {
 }
 
 #btnRegistrar {
-    background: #D7B957;
-    border: 3px solid #D7B957;
+    background: #A8293C;
+    border: 3px solid #A8293C;
     color: #fff;
     text-decoration: none;
     padding: 12px 28px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
     border-radius: 12px;
+    cursor: pointer;
 }
 
 #btnRegistrar :hover {
     background-color: #fff;
     color: #D7B957;
+}
+
+input[type="button"]:hover {
+    background: #4d0e18;
+}
+
+textarea {
+    display: block;
+    width: 80%;
+    overflow: hidden;
+    resize: both;
+    padding-bottom: 20px;
+}
+
+.form-horizontal .form-group {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.form-group {
+    margin-bottom: 20px;
 }
 
 .footer {
