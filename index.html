@@ -64,6 +64,7 @@
 
                         <label for="contrasenna-login">Contraseña *</label>
                         <input type="text" id="contrasenna-login">
+                        <span class="far fa-eye" id="btnOjito"></span>
                         <a href="#">
                             <label for="olvidoContrasena" id="olvido-pwd">¿Olvidaste tu Contraseña?</label>
                         </a>
@@ -268,22 +269,22 @@
                     <p><span class="fa fa-mobile"></span>89021548</p>
                 </section>
             </section>
-            <form action="" class="form-contact">
+            <form action="" class="form-contact" id="frm-registreRestaurante">
                 <h3>Registre su restaurante</h3>
                 <div class="user-info">
                     <label for="names">Nombre *</label>
-                    <input type="text" id="names">
+                    <input type="text" id="names" required>
 
                     <label for="phone">Telefono / Celular </label>
                     <input type="text" id="phone">
 
                     <label for="email">Correo electronico*</label>
-                    <input type="text" id="email">
+                    <input type="text" id="email" required>
 
                     <label for="mensaje">Mensaje *</label>
-                    <textarea id="mensaje"></textarea>
+                    <textarea id="mensaje" required></textarea>
 
-                    <input type="button" value="Enviar Información" id="btn">
+                    <input type="reset" value="Enviar Información" id="btn">
 
                 </div>
             </form>

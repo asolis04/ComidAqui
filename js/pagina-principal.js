@@ -1,3 +1,4 @@
+'use strict'
 /*Mostrar cuando la pantalla es menor a 700 el menú*/
 document.querySelector('.menu-btn').addEventListener('click', () => {
     document.querySelector('.nav-menu').classList.toggle('show')
@@ -12,6 +13,9 @@ ScrollReveal().reveal('.cards-banner-one', { delay: 200 });
 ScrollReveal().reveal('.form-nosotros', { delay: 200 });
 ScrollReveal().reveal('.social', { delay: 200 });
 
+/*Validar el formulario que registrar el restaurante */
+const camposRequeridos = document.querySelectorAll('#frm-registreRestaurante :required');
+const btnEnviarInfo = document.querySelector('#btn');
 
 /*Llamar al formulatio de Register */
 const register = document.getElementById('register');
@@ -209,6 +213,36 @@ const validarCorreo = () => {
     };
 };
 
+/*Validar Restaurante */
+const validarRegistroRestaurante = () => {
+    let error = false;
+
+    camposRequeridos.forEach(campo => {
+        if (campo.value == '') {
+            error = true;
+            campo.classList.add('error');
+        } else {
+            campo.classList.remove('error');
+        }
+    });
+    if (error == true) {
+        Swal.fire({
+            icon: 'warning',
+            title: 'No se pudo enviar la información',
+            text: 'Por Favor ingrese todos los datos'
+        });
+    } else {
+        Swal.fire({
+            icon: 'success',
+            title: 'Información enviada',
+            text: 'Información enviada'
+        });
+        camposRequeridos.values = "";
+
+
+    }
+};
+
 
 const registrado = () => {
     loginContainer.classList.add('showLogin'),
@@ -220,3 +254,5 @@ btnRegistrar.addEventListener('click', validarRegistro);
 btnLogin.addEventListener('click', validarLogin);
 
 btnpwd.addEventListener('click', validarCorreo);
+
+btnEnviarInfo.addEventListener('click', validarRegistroRestaurante);

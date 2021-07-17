@@ -9,7 +9,11 @@ const btnGuardar = document.querySelector('#btnGuadar');
 
 let usuarioSesion = JSON.parse(localStorage.getItem('usuarioConectado'));
 
-
+inputNombre.innerText = usuarioSesion.nombre;
+inputCorreo.innerText = usuarioSesion.correo;
+inputFechaNacimiento.innerText = usuarioSesion.fechaNacimiento;
+/*inputTipoCedula.innerText = usuarioSesion.cedula;*/
+inputContrasenha.innerText = usuarioSesion.nombre;
 
 
 
@@ -93,10 +97,6 @@ const obtenerDatos = () => {
 //evento , cuando al boton se le da click se ejecuta la funcion de obtener datos 
 btnGuardar.addEventListener('click', validar);
 
-inputNombre.innerText = usuarioSesion.nombre;
-inputCorreo.innerText = usuarioSesion.correo;
-inputFechaNacimiento.innerText = usuarioSesion.fechaNacimiento;
-/*inputTipoCedula.innerText = usuarioSesion.cedula;*/
-inputContrasenha.innerText = usuarioSesion.nombre;
 
-console.log(usuarioSesion);
+
+console.log(usuarioSesion.nombre);

@@ -59,48 +59,83 @@
                             </div>
                         </nav>
                     </header>
-                    <br>
 
-                    <form>
-                        <main>
+                    <!--Banner Reservación-->
+                    <section class="banner" id="reservacion">
+                        <h2 class="h2-mismo">Haga su pedido para RECOGER o disfrutar en el LUGAR</h2>
+                        <div class="card-container">
+                            <div class="card-img">
+                                <!-- image here -->
+                            </div>
 
-                            <section>
+                            <div class="card-content">
+                                <h3>Reservaciones</h3>
                                 <form>
-                                    <div id="ctn-bars-search">
-                                        <input type="text" id="inputSearch" placeholder="Buscar Restaurante">
-                                        <table id="tbl-usuarios">
-                                            <tbody>
+                                    <div class="form-row">
+                                        <select name="days">
+                                <option value = "day-select">Seleccione el día</option>
+                                <option value = "doming">Domingo</option>
+                                <option value = "lunes">Lunes</option>
+                                <option value = "martes">Martes</option>
+                                <option value = "miercoles">Miércoles</option>
+                                <option value = "jueves">Jueves</option>
+                                <option value = "viernes">Viernes</option>
+                                <option value = "sabado">Sábado</option>
+                            </select>
 
-                                            </tbody>
-                                        </table>
+                                        <select name="Hora">
+                                <option value = "hour-select">Hora</option>
+                                <option value = "10">10: 00</option>
+                                <option value = "10">12: 00</option>
+                                <option value = "10">14: 00</option>
+                                <option value = "10">16: 00</option>
+                                <option value = "10">18: 00</option>
+                                <option value = "10">20: 00</option>
+                                <option value = "10">22: 00</option>
+                            </select>
                                     </div>
-                                    <div>
-                                        <label for="txt-fecha">Fecha:</label>
-                                        <input type="date" id="txt-fecha" required>
+
+                                    <div class="form-row">
+                                        <input type="text" placeholder="Nombre Completo">
+                                        <select name="select-restaurantes">
+                                <option value = "select-rest">Seleccione el restaurante</option>
+                                <option value = "chilis">Chili's</option>
+                                <option value = "parrillita">La Parrillita De Pepe</option>
+                                <option value = "nuestraTierra">Nuestra Tierra</option>
+                                <option value = "Tin-Jo">Tin Jo</option>
+                            </select>
                                     </div>
-                                    <div>
-                                        <label for="txt-hora">Hora:</label>
-                                        <input type="time" id="txt-hora" required>
-                                    </div>
-                                    <div>
-                                        <label for="txt-cant-ninhos">Cantidad de niños:</label>
-                                        <input type="number" id="txt-cant-ninhos" required>
-                                    </div>
-                                    <div>
-                                        <label for="txt-cant-adultos">Cantidad de adultos:</label>
-                                        <input type="number" id="txt-cant-adultos" required>
-                                    </div>
-                                    <div>
-                                        <label for="txt-comentario">Comentario adicional</label>
-                                        <textarea id="txt-comentario"></textarea>
-                                    </div>
-                                    <div>
-                                        <button type="submit" id="btn-reservar">Reservar</button>
-                                        <input type="reset" value="Borrar" id="btn-borrar">
+
+                                    <!--  <div class="form-rowOne">
+                            <input type="text" id="nombreCompleto" placeholder="Nombre Completo">
+                            <div id="ctn-bars-search">
+                                <input type="text" id="inputSearch" placeholder="Buscar Restaurante">
+                                <table id="tbl-usuarios">
+                                    <tbody>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="ctn-icon-search">
+                                <i class="fas fa-search" id="icon-search"></i>
+                            </div>
+
+                        </div>-->
+
+                                    <div class="form-row">
+                                        <input type="number" placeholder="Cantid. Personas?" min="1">
+                                        <input type="submit" value="Reserve una mesa">
+                                        <input type="submit" value="Para llevar">
                                     </div>
                                 </form>
-                            </section>
-                        </main>
+                            </div>
+                        </div>
+                    </section>
+
+
+
+
+
         </div>
 
         <footer class="footer">
