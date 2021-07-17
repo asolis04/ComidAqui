@@ -556,3 +556,19 @@
         .error {
             border: 1px solid #EF116C;
         }
+        /*El ojito del pwd*/
+        
+        .password-container {
+            width: 235px;
+            display: flex;
+        }
+        
+        .password-container input {
+            border: 0px;
+            outline: none;
+        }
+        
+        .password-container span {
+            cursor: pointer;
+            align-self: center;
+        }

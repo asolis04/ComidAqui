@@ -41,6 +41,8 @@ const cuentaNueva = document.getElementById('cuentaNueva');
 const registerSecond = document.getElementById('registerSecond');
 const inicioSecond = document.getElementById('inicioSecond');
 
+let ojito = document.querySelector('#btnOjito');
+
 
 
 
@@ -243,6 +245,21 @@ const validarRegistroRestaurante = () => {
     }
 };
 
+const mostrarPswd = () => {
+
+    let inputPswd = document.querySelector('#contrasenna-login');
+    if (inputPswd.type == 'password') {
+        inputPswd.type = 'text';
+        ojito.classList.remove('fa-eye');
+        ojito.classList.add('fa-eye-slash');
+    } else {
+        inputPswd.type = 'password';
+        ojito.classList.add('fa-eye');
+        ojito.classList.remove('fa-eye-slash');
+    }
+
+}
+
 
 const registrado = () => {
     loginContainer.classList.add('showLogin'),
@@ -256,3 +273,5 @@ btnLogin.addEventListener('click', validarLogin);
 btnpwd.addEventListener('click', validarCorreo);
 
 btnEnviarInfo.addEventListener('click', validarRegistroRestaurante);
+
+ojito.addEventListener('click', mostrarPswd);
