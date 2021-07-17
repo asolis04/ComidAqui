@@ -1,179 +1,31 @@
-* {
-    box-sizing: content-box;
-    margin: 0;
-    padding: 0;
-}
-
- :focus {
-    outline: none;
-}
-/*Para toda la página*/
-
-body {
-    color: #000000;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 16px;
-}
-
-.container {
-    display: flex;
-    flex-flow: row wrap;
-    text-align: center;
-    width: 80%;
-    margin: auto;
-    background: #ffff;
-}
-
-.aside-navegacion {
-    height: 1000px;
-    float: right;
-}
-
-.aside-contenido {
- 
-    height: 1000px;
-    width: 75%;
-    float: left;
-}
-
-.footer {
-    position: fixed;
-    bottom: 0;
-    align-self: center;
-    /*  flex: ;
-    color: #1f060a;
-    font-size: 16px;*/
-}
-/*Navigation*/
-
-.nav-menu a {
-    color: #000000;
-    text-decoration: none;
-}
-
-.nav-menu ul {
-    list-style: none;
-}
-
-.nav-main {
-    font-size: 17px;
-    display: flex;
-    justify-content: space-between;
+#sctForm {
     align-items: center;
-    height: 95px;
-    padding: 20px 0;
-    width: 1047px;
-
+    width: 500px;
+    margin: 0px 0px 20px 150px;
+    display: inline-block;
 }
 
-.nav-logo {
-    width: 180px;
-}
-/*Nav izquierda*/
-
-.nav-main ul {
-    display: flex;
-}
-
-.nav-main ul li {
-    padding: 10px
-}
-
-.nav-main ul.nav-menu-right {
-    margin-right: 50px;
-}
-
-.nav-main ul li a {
-    padding: 6px;
-}
-
-.nav-main ul li a:hover {
-    border-bottom: 2px solid #A8293C;
-}
-/*Navegacion lateral*/
-
-.navegacion ul {
-    width: 240px;
-    height: 100%;
-    list-style: none;
-    padding-bottom: 200px;
-}
-
-.navegacion .menu li.title-menu {
-    padding: 20px;
-    background: #f8f0d8;
-    color: #A8293C;
-    text-align: center;
-    font-size: 22px;
-}
-
-.navegacion .menu a {
-    display: block;
-    padding: 20px;
-    border-bottom: 1px solid #C6D0DA;
-    font-size: 22px;
-    font-weight: 200;
-    text-decoration: none;
-  color: #A8293C;
-}
-
-.navegacion .menu a:hover {
-
-    background: linear-gradient(#D7B957, #f8f0d8);
-}
-
-.navegacion .menu li span.icon-menu {
-    margin-right: 12px;
-}
-
-@media screen and (max-width: 320px) {
-    .navegacion ul {
-        width: 100%;
-    }
-}
-
-@media all and (min-width: 600px) {
-    .aside {
-        flex: 1 0 0;
-    }
-}
-
-@media all and (min-width: 800px) {
-    .side-navegacion {
-        order: 1;
-    }
-    .aside-contenido {
-        order: 3;
-    }
-    .footer {
-        order: 4;
-    }
-}
-
-body {
-    padding: 2em;
-}
-.tituloRegistrarRestaurante{
+.tituloRegistrarRestaurante {
     height: 52px;
     width: 1021PX;
     font-size: 45px;
     display: flex;
     justify-content: center;
-    background:#a8293c;
+    background: #a8293c;
     color: white;
     margin: 0px;
 }
-.cajonDeAnadirRest{
+
+.cajonDeAnadirRest {
     height: 40px;
-    width: 1109px;
+    width: 1000px;
     font-size: 18px;
     display: flex;
     justify-content: flex-star;
-    border-bottom: 12px  solid #a8293c;
-
+    border-bottom: 5px solid #a8293c;
 }
 
-.cajonDeAnadirRest a{
+.cajonDeAnadirRest a {
     font-size: 27px;
     width: 205px;
     margin: 1px;
@@ -181,130 +33,116 @@ body {
     color: #000;
     text-decoration: none;
 }
-.error{
+
+.error {
     border: 2px solid #87b3df;
 }
-.cajonDeAnadirRest a:hover{
-    color:#a8293c;
+
+.cajonDeAnadirRest a:hover {
+    color: #a8293c;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     transition: all .5s b957;
-
 }
-.formularioAgregarRestaurante{
+
+.datosRestaurantes,
+.formRestaurantes {
+    align-self: flex-end;
+}
+
+.formularioAgregarRestaurante {
     width: 870px;
     display: flex;
-    margin: -7px;
-    height: 434px;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-evenly;
-
+    justify-content: space-around;
+    position: relative;
+    top: 140px;
 }
-.datosRestaurantes{
+
+.datosRestaurantes {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    flex-wrap: nowrap;
     align-content: space-around;
-    height: 395px;
+    height: 100vh;
 }
-.formRestaurantes{
+
+.formRestaurantes {
     margin-bottom: 18px;
 }
-.checkboxRestaurantes{
+
+.checkboxRestaurantes {
     width: 235px;
     display: flex;
     justify-content: space-evenly;
     height: 415px;
     flex-direction: column;
 }
-#miFormularioRestaurantecheck{
+
+#miFormularioRestaurantecheck {
     display: block;
     flex-direction: column;
-    flex-wrap: nowrap;
     width: 226px;
-    height: 414px;
-    
+    height: 100vh;
 }
-.datosRestaurantes :hover{
-    color:#a8293c;
+
+.datosRestaurantes :hover {
+    color: #a8293c;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     transition: all .5s b957;
     background: #d7b957;
 }
-#miFormularioRestaurantecheck :hover
-{
-    color:#a8293c;
+
+#miFormularioRestaurantecheck :hover {
+    color: #a8293c;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     transition: all .5s b957;
     background: #d7b957;
 }
-#miFormularioRestaurantecheck p{
-height: 30px;
-font-size: 18px;
-text-align: left;
-text-decoration: underline #d7b957 solid 3px;
-} 
+
+#miFormularioRestaurantecheck p {
+    height: 30px;
+    font-size: 18px;
+    text-align: left;
+    text-decoration: underline #d7b957 solid 3px;
+}
+
 .registarRestaurantes :hover {
-
-  color: #582e44;
+    color: #582e44;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     transition: all .5s b957;
-   
-
 }
-#miFormularioRestaurantecheck label{
 
-cursor: default;
-width: 198px;
-display: inline-block;
-height: 37px;
+#miFormularioRestaurantecheck label {
+    cursor: default;
+    width: 198px;
+    display: inline-block;
+    height: 37px;
 }
- button#btnRegistar{
-   
+
+button#btnRegistar {
     border-top: 2px solid #bd7344;
     border-bottom: 2px solid #bd7344;
     border-left: 5px solid #bd7344;
     border-right: 5px solid #bd7344;
     width: 87px;
     height: 27px;
-    font-size: 16px;  
+    font-size: 16px;
     border-radius: 12px;
     background-color: #bd7344;
- }
- button#Borrar{
+}
+
+button#Borrar {
     border-top: 2px solid #bd7344;
     border-bottom: 2px solid #bd7344;
     border-left: 5px solid #bd7344;
     border-right: 5px solid #bd7344;
     width: 89px;
     height: 27px;
-    font-size: 16px;  
+    font-size: 16px;
     border-radius: 12px;
     background-color: #bd7344;
- }
- #sctFooter {
-    background-color: #8E7A3D;
-}
-
-footer div {
-    display: flex;
-    padding: 0px 30px 0px 30px;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #8E7A3D;
-    width: 1286px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: stretch;
-}
-
-
-footer div h2 {
-    text-align: center;
 }
