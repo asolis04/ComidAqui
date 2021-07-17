@@ -37,9 +37,7 @@ const cuentaNueva = document.getElementById('cuentaNueva');
 const registerSecond = document.getElementById('registerSecond');
 const inicioSecond = document.getElementById('inicioSecond');
 
-/*Llamar al de registro e Inicio en la parte de abajo */
-const registerSecond = document.getElementById('registerSecond');
-const inicioSecond = document.getElementById('inicioSecond');
+
 
 
 
@@ -69,10 +67,6 @@ closeRegister.addEventListener('click', () => {
     registerContainer.classList.remove('showRegister');
 });
 
-registerSecond.addEventListener('click', () => {
-    registerContainer.classList.add('showRegister');
-});
-
 
 /*Llamar al formulario de login */
 
@@ -89,9 +83,6 @@ closeLogin.addEventListener('click', () => {
     loginContainer.classList.remove('showLogin');
 });
 
-inicioSecond.addEventListener('click', () => {
-    loginContainer.classList.add('showLogin');
-});
 
 
 /*Llamar al formulario de Olvido contraseña */
