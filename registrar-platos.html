@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="css/reset.css">
     <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!--Custom CSS-->
+    <!--Font CSS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     <!--Custom-->
     <link rel="stylesheet" href="css/configuracion-plantilla.css">
     <link rel="stylesheet" href="css/pagina-principal.css">
@@ -47,7 +46,7 @@
 
         <nav class="menu">
             <ul>
-                <li><a href="/admin-usuarios.html" id="adm-usuarios">Adm. Usuarios</a></li>
+                <li><a href="/admin-usuarios.html" id="adm-usuarios">Administrar Usuarios</a></li>
                 <li><a href="/aceptar-solicitudes.html" id="aceptar-usuarios">Aceptar Usuario</a></li>
                 <li><a href="/impuestos.html" id="admin-impuestos">Impuesto</a></li>
                 <li><a href="/tiempoDeReserva.html" id="admin-tiempoReserva">Tiempo de Reserva</a></li>
@@ -89,37 +88,44 @@
                     <h2>Agregar plato</h2>
                     <br>
                     <section id="sctForm">
-                        <form>
-                            <div>
+                        <form class="form-horizontal">
+                            <div class="form-group">
                                 <label for="txtNombre">Nombre: </label>
-                                <input type="text" id="txtNombre" required>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="text" id="txtNombre" required>
+                                </div>
                             </div>
-                            <br>
-                            <div>
-                                <label for="txtDescripcion">Descripción: </label>
-                                <textarea id="txtDescripcion" required></textarea>
+                            <div class="form-group">
+                                <label for="txtDescripcion" class="col-sm-2 control-label">Descripción: </label>
+                                <div class="col-sm-10">
+                                    <textarea id="txtDescripcion" required></textarea>
+                                </div>
                             </div>
-                            <br>
-                            <div>
-                                <label for="txtPrecio">Precio: </label>
-                                <input type="text" id="txtPrecio" required>
+                            <div class="form-group">
+                                <label for="txtCaracEspeciales" class="col-sm-2 control-label">Precio: </label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="text" id="txtPrecio" required>
+                                </div>
                             </div>
-                            <br>
-                            <div id="txtCaracEspeciales">
-                                <label for="txtCaracEspeciales">Características especiales: </label>
-                                <textarea id="txtCaracEspeciales" required></textarea>
+                            <div class="form-group">
+                                <label for="txtCaracEspeciales" class="col-sm-2 control-label">Características especiales: </label>
+                                <div class="col-sm-10">
+                                    <textarea id="txtCaracEspeciales" required></textarea>
+                                </div>
                             </div>
-                            <br>
-                            <div id="txtClasificacion">
-                                <label for="txtClasificacion">Clasificación</label>
-                                <textarea id="txtClasificacion" required></textarea>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="txtClasificacion">Clasificación:</label>
+                                <div class="col-sm-10">
+                                    <textarea id="txtClasificacion" required></textarea>
+                                </div>
                             </div>
-                            <br>
-                            <div>
-                                <button type="button" id="btnRegistrar">Registrar</button>
+                            <div class="form-group">
+                                <div id="btnEditar" class="col-sm-offset-2 col-sm-10">
+                                    <button type="button" id="btnRegistrar">Registrar</button>
+                                </div>
                             </div>
-
                         </form>
+
                     </section>
 
 
