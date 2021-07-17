@@ -9,7 +9,6 @@
          :focus {
             outline: none;
         }
-        /*Para toda la página*/
         
         body {
             color: #000000;
@@ -232,8 +231,9 @@
         }
         
         .card-img {
-            background: url("../img/header-option1.jpg") center/cover no-repeat;
+            background: url("../img/phone-reservation.jpg") center/cover no-repeat;
             border-radius: 1%;
+            height: 100%;
         }
         
         .card-content {
@@ -253,7 +253,11 @@
         .form-row {
             display: block;
             width: 50%;
+<<<<<<< Updated upstream
             margin: 0 auto;
+=======
+            margin: 10% auto;
+>>>>>>> Stashed changes
         }
         
         form select,

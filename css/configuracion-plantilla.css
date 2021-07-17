@@ -26,12 +26,27 @@ body {
 
 /*Navigation*/
 
-.nav-menu a {
+
+/*.nav-menu a {
     text-decoration: none;
     font-weight: bold;
     color: #0000;
     text-shadow: 0.5px 0.5px 0.5px #A8293C;
     font-size: 20px;
+}*/
+
+.nav .menu a {
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid #C6D0DA;
+    font-size: 22px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #A8293C;
+}
+
+.nav .menu a:hover {
+    background: linear-gradient(#D7B957, #f8f0d8);
 }
 
 .nav-menu ul {
