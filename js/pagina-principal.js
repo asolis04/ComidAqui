@@ -33,6 +33,9 @@ const inputContrasenna = document.querySelector('#contrasenna-login');
 
 /*Cuando selecciona crear cuenta, llama al formulario de Registrar */
 const cuentaNueva = document.getElementById('cuentaNueva');
+/*En el Formulario */
+const registerSecond = document.getElementById('registerSecond');
+const inicioSecond = document.getElementById('inicioSecond');
 
 
 
@@ -53,6 +56,10 @@ cuentaNueva.addEventListener('click', () => {
 register.addEventListener('click', () => {
     registerContainer.classList.add('showRegister');
 });
+registerSecond.addEventListener('click', () => {
+    registerContainer.classList.add('showRegister');
+});
+
 
 closeRegister.addEventListener('click', () => {
     registerContainer.classList.remove('showRegister');
@@ -63,6 +70,10 @@ closeRegister.addEventListener('click', () => {
 
 
 login.addEventListener('click', () => {
+    loginContainer.classList.add('showLogin');
+});
+
+inicioSecond.addEventListener('click', () => {
     loginContainer.classList.add('showLogin');
 });
 
