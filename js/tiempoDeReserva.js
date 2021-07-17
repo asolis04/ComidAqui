@@ -12,7 +12,12 @@ const validar=() =>{
     }else inputTiempoDeReserva.classList.remove('error');
     
   
-    
+    if (error == false) {//ALERTAS
+        Swal.fire({
+            icon: 'success',
+            title: 'Se agregó correctamente el tiempo '
+        })
+    }
     if (error == true) {
         Swal.fire({
             'icon': 'warning',
