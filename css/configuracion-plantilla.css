@@ -117,11 +117,11 @@ body {
     text-decoration: none;
     color: #0000;
     text-shadow: 0.5px 0.5px 0.5px #A8293C;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .menu li:hover {
-    background: #D7B957;
+    background: #dbdada
 }
 
 article h1 {
