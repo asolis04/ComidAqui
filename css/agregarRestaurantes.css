@@ -86,22 +86,6 @@
     height: 100vh;
 }
 
-.datosRestaurantes :hover {
-    color: #a8293c;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    transition: all .5s b957;
-    background: #d7b957;
-}
-
-#miFormularioRestaurantecheck :hover {
-    color: #a8293c;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    transition: all .5s b957;
-    background: #d7b957;
-}
-
 #miFormularioRestaurantecheck p {
     height: 30px;
     font-size: 18px;
@@ -124,25 +108,25 @@
 }
 
 button#btnRegistar {
-    border-top: 2px solid #bd7344;
-    border-bottom: 2px solid #bd7344;
-    border-left: 5px solid #bd7344;
-    border-right: 5px solid #bd7344;
-    width: 87px;
-    height: 27px;
-    font-size: 16px;
+    background: #A8293C;
+    border: 3px solid #A8293C;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
     border-radius: 12px;
-    background-color: #bd7344;
+    cursor: pointer;
 }
 
 button#Borrar {
-    border-top: 2px solid #bd7344;
-    border-bottom: 2px solid #bd7344;
-    border-left: 5px solid #bd7344;
-    border-right: 5px solid #bd7344;
-    width: 89px;
-    height: 27px;
-    font-size: 16px;
+    background: #A8293C;
+    border: 3px solid #A8293C;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
     border-radius: 12px;
-    background-color: #bd7344;
+    cursor: pointer;
 }

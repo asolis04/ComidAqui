@@ -7,12 +7,12 @@
 // 5 -> pendiente de cambio de contraseña
 
 let listaUsuarios = [{
-        nombre: 'Ana Solis Rostrán',
+        nombre: 'Ana Solís Rostrán',
         correo: 'asolis@gmail.com',
         telefono: '83031506',
         fechaNacimiento: '4-Jul-1991',
         cedula: '2-0689-0142',
-        contrasenna: '123',
+        contrasenna: 'S1a$',
         rol: 'administrador',
         estado: 1
     },
@@ -22,7 +22,7 @@ let listaUsuarios = [{
         telefono: '88751423',
         fechaNacimiento: '4-Jul-1991',
         cedula: '1-0987-0142',
-        contrasenna: '456',
+        contrasenna: 'C2f@',
         rol: 'dueno',
         estado: 1
     },
@@ -33,7 +33,7 @@ let listaUsuarios = [{
         fechaNacimiento: '4-Jul-1991',
         telefono: '98651402',
         cedula: '1-0987-0874',
-        contrasenna: '789',
+        contrasenna: 'B2k%',
         rol: 'cliente',
         estado: 1,
         favoritos: {
@@ -48,7 +48,7 @@ let listaUsuarios = [{
         telefono: '96021485',
         fechaNacimiento: '4-Jul-1991',
         cedula: '1-0787-0874',
-        contrasenna: '963',
+        contrasenna: 'C3d$',
         rol: 'cliente',
         estado: 2,
         favoritos: {
@@ -63,7 +63,7 @@ let listaUsuarios = [{
         telefono: '96021485',
         fechaNacimiento: '4-Jul-1991',
         cedula: '1-0787-0874',
-        contrasenna: '963',
+        contrasenna: 'M4v&',
         rol: 'encargado',
         estado: 1
     },
@@ -101,7 +101,7 @@ const validarCredenciales = (correo, contrasenna) => {
         if ((usuarioRoll == 'administrador'))
             Swal.fire({
                 icon: 'success',
-                title: 'Inicio de sessión correcto'
+                title: 'Inicio de sesión correcto'
 
             }).then(() => {
                 window.location.href = 'perfiles.html';
@@ -109,7 +109,7 @@ const validarCredenciales = (correo, contrasenna) => {
         if ((usuarioRoll == 'encargado'))
             Swal.fire({
                 icon: 'success',
-                title: 'Inicio de sessión correcto'
+                title: 'Inicio de sesión correcto'
 
             }).then(() => {
                 window.location.href = 'perfiles.html';
@@ -117,7 +117,7 @@ const validarCredenciales = (correo, contrasenna) => {
         if ((usuarioRoll == 'cliente')) {
             Swal.fire({
                 icon: 'success',
-                title: 'Inicio de sessión correcto'
+                title: 'Inicio de sesión correcto'
 
             }).then(() => {
                 window.location.href = 'Pagina-inicio-cliente.html';
@@ -127,7 +127,7 @@ const validarCredenciales = (correo, contrasenna) => {
         if ((usuarioRoll == 'dueno')) {
             Swal.fire({
                 icon: 'success',
-                title: 'Inicio de sessión correcto'
+                title: 'Inicio de sesión correcto'
 
             }).then(() => {
                 window.location.href = 'perfiles.html';
@@ -137,7 +137,7 @@ const validarCredenciales = (correo, contrasenna) => {
     } else {
         Swal.fire({
             icon: 'error',
-            title: 'Inicio de sessión incorrecto',
+            title: 'Inicio de sesión incorrecto',
             text: msjError
         });
 
