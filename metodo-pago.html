@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="css/reset.css">
     <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
     <!--Custom CSS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/pagina-inicio-cliente.css">
     <link rel="stylesheet" href="css/metodo-pago.css">
     <link rel="stylesheet" href="css/registrar-metodo-pago.css">
@@ -23,39 +22,36 @@
 <body>
     <div class="container">
         <!--Menu principal-->
-        <nav class="nav-main">
-            <img src="img/logoComidAqui.png" alt="ComidAqui Logo" class="nav-logo">
-            <ul class="nav-menu">
-                <li>
-                    <a href="/Pagina-inicio-cliente.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="perfil-cliente.html">Perfil</a>
-                </li>
-                <li>
-                    <a href="index.html" id="Cerrar-Sesion">Cerrar Sesión</a>
-                </li>
-            </ul>
+        <header class="header">
+            <nav class="nav-main">
+                <img src="img/logo-comidaqui.JPG" alt="ComidAqui Logo" class="nav-logo">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="/Pagina-inicio-cliente.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/ListaRestaurantes.html">Restaurantes</a>
+                    </li>
+                    <li>
+                        <a href="perfil-cliente.html">Perfil</a>
+                    </li>
+                    <li>
+                        <a href="../html/index.html" id="Cerrar-Sesion">Cerrar Sesión</a>
+                    </li>
+                </ul>
 
-        </nav>
+            </nav>
+        </header>
 
         <div id="all-contenido">
-            <header id="headerPrincipal">
-                <section class="superior">
-                </section>
-                <section class="inferior">
-                    <div>
-                        <img id="Tarjeta" src="img/tarjeta.png" alt="Icono tarjeta">
-                        <h2>Método de pago</h2>
-                        <h4>Usuario</h4>
-                        <img id="Usuario" src="img/usuario.png" alt="Usuario">
-                    </div>
-                </section>
-            </header>
+
             <main>
                 <section id="sctFactura">
-                    <h3>Resumen de la orden</h3>
-                    <table>
+                    <div id="encabezado">
+                        <img id="Tarjeta" src="img/tarjeta.png" alt="Icono tarjeta">
+                        <h2>Resumen de la orden</h2>
+                    </div>
+                    <table id="factura">
                         <tr>
                             <td>Gallo Pinto</td>
                             <td>₡2,000</td>
@@ -90,7 +86,7 @@
                         </tr>
                         <tr>
                             <td>_______________________________</td>
-                            <td> ______________________________</td>
+                            <td> ________________________</td>
                         </tr>
                         <tr>
                             <td>Total a pagar</td>

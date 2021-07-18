@@ -1,5 +1,12 @@
 body {
     font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background: #ffff;
 }
 
 #header-hacer-pedido .superior {
@@ -149,10 +156,6 @@ body {
     }
 }
 
-body {
-    padding: 2em;
-}
-
 
 /******MENU******/
 
@@ -233,6 +236,8 @@ body {
     justify-content: space-evenly;
     width: 10%;
     border-radius: 12px;
+    position: relative;
+    bottom: -50px;
 }
 
 .boton-hacer-pago:hover {

@@ -1,5 +1,12 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+}
+
 .container {
-    width: 80%;
+    width: 70%;
+    margin: auto;
+    background: #ffff;
 }
 
 .logo-restaurante .logo-parrillita {
@@ -7,7 +14,7 @@
     background-position: center;
     background-size: cover;
     height: 150px;
-    width: 20%;
+    width: 30%;
     display: block;
     margin: auto;
     padding-bottom: 2%;
@@ -166,76 +173,6 @@
     padding-left: 100px;
     justify-content: space-evenly;
     color: #d7b957;
-}
-
-body {
-    font-family: 'Noto Sans', sans-serif;
-}
-
-* {
-    box-sizing: content-box;
-    margin: 0;
-    padding: 0;
-}
-
- :focus {
-    outline: none;
-}
-
-
-/*Para toda la página*/
-
-body {
-    color: #000000;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 16px;
-}
-
-.container {
-    display: flex;
-    flex-flow: row wrap;
-    text-align: center;
-    width: 80%;
-    margin: auto;
-    background: #ffff;
-}
-
-.aside-navegacion {
-    height: 50px;
-    float: right;
-}
-
-.aside-contenido {
-    background: #ffff;
-    height: 1000px;
-    width: 75%;
-    float: left;
-}
-
-
-/*vivi usuarios*/
-
-.banner-principal {
-    background: #a8293c;
-    padding: 15px 20px 15px 20px;
-}
-
-
-/*vivi usuarios*/
-
-.banner-principal {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 30px;
-}
-
-.footer {
-    position: fixed;
-    bottom: 0;
-    align-self: center;
-    /*  flex: ;
-    color: #1f060a;
-    font-size: 16px;*/
 }
 
 

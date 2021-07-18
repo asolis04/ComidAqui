@@ -1,3 +1,14 @@
+#encabezado {
+    position: relative;
+    left: 450px;
+    top: -50px
+}
+
+#encabezado h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
 #all-contenido {
     padding-top: 80px;
 }

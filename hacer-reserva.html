@@ -13,128 +13,110 @@
     <!--Custom CSS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/pagina-inicio-cliente.css">
-    <link rel="stylesheet" href="/css/hacer-reserva.css">
+
 
 </head>
 
 <body>
     <div class="container">
         <!--Menu principal-->
-        <nav class="nav-main">
-            <img src="img/logoComidAqui.png" alt="ComidAqui Logo" class="nav-logo">
-            <ul class="nav-menu">
-                <li>
-                    <a href="/Pagina-inicio-cliente.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="perfil-cliente.html">Perfil</a>
-                </li>
-                <li>
-                    <a href="index.html" id="Cerrar-Sesion">Cerrar Sesión</a>
-                </li>
-            </ul>
+        <header class="header">
+            <nav class="nav-main">
+                <img src="img/logo-comidaqui.JPG" alt="ComidAqui Logo" class="nav-logo">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="/Pagina-inicio-cliente.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/ListaRestaurantes.html">Restaurantes</a>
+                    </li>
+                    <li>
+                        <a href="perfil-cliente.html">Perfil</a>
+                    </li>
+                    <li>
+                        <a href="../html/index.html" id="Cerrar-Sesion">Cerrar Sesión</a>
+                    </li>
+                </ul>
 
-        </nav>
+            </nav>
+        </header>
 
         <div id="all-contenido">
             <aside class="aside-contenido">
 
-                <!--Vivi Usuarios-->
-
-                <head>
-                    <title>Platos</title>
-                </head>
-
-                <body>
-                    <header>
-                        <link rel="stylesheet" href="css/reset.css">
-                        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-                        <meta charset="UTF-8">
-                        <link rel="stylesheet" href="../css/pagina-menu-lateral-usuarios.css">
-                        <nav id=barra_de_inicio>
-                            <div class="banner-principal">
-                                <p>Reservación</p>
-                            </div>
-                        </nav>
-                    </header>
-
-                    <!--Banner Reservación-->
-                    <section class="banner" id="reservacion">
-                        <h2 class="h2-mismo">Haga su pedido para RECOGER o disfrutar en el LUGAR</h2>
-                        <div class="card-container">
-                            <div class="card-img">
-                                <!-- image here -->
-                            </div>
-
-                            <div class="card-content">
-                                <h3>Reservaciones</h3>
-                                <form>
-                                    <div class="form-row">
-                                        <select name="days">
-                                <option value = "day-select">Seleccione el día</option>
-                                <option value = "doming">Domingo</option>
-                                <option value = "lunes">Lunes</option>
-                                <option value = "martes">Martes</option>
-                                <option value = "miercoles">Miércoles</option>
-                                <option value = "jueves">Jueves</option>
-                                <option value = "viernes">Viernes</option>
-                                <option value = "sabado">Sábado</option>
-                            </select>
-
-                                        <select name="Hora">
-                                <option value = "hour-select">Hora</option>
-                                <option value = "10">10: 00</option>
-                                <option value = "10">12: 00</option>
-                                <option value = "10">14: 00</option>
-                                <option value = "10">16: 00</option>
-                                <option value = "10">18: 00</option>
-                                <option value = "10">20: 00</option>
-                                <option value = "10">22: 00</option>
-                            </select>
-                                    </div>
-
-                                    <div class="form-row">
-                                        <input type="text" placeholder="Nombre Completo">
-                                        <select name="select-restaurantes">
-                                <option value = "select-rest">Seleccione el restaurante</option>
-                                <option value = "chilis">Chili's</option>
-                                <option value = "parrillita">La Parrillita De Pepe</option>
-                                <option value = "nuestraTierra">Nuestra Tierra</option>
-                                <option value = "Tin-Jo">Tin Jo</option>
-                            </select>
-                                    </div>
-
-                                    <!--  <div class="form-rowOne">
-                            <input type="text" id="nombreCompleto" placeholder="Nombre Completo">
-                            <div id="ctn-bars-search">
-                                <input type="text" id="inputSearch" placeholder="Buscar Restaurante">
-                                <table id="tbl-usuarios">
-                                    <tbody>
-
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div id="ctn-icon-search">
-                                <i class="fas fa-search" id="icon-search"></i>
-                            </div>
-
-                        </div>-->
-
-                                    <div class="form-row">
-                                        <input type="number" placeholder="Cantid. Personas?" min="1">
-                                        <input type="submit" value="Reserve una mesa">
-                                        <input type="submit" value="Para llevar">
-                                    </div>
-                                </form>
-                            </div>
+                <!--Banner Reservación-->
+                <section class="banner" id="reservacion">
+                    <h2 class="h2-mismo">Haga su pedido para RECOGER o disfrutar en el LUGAR</h2>
+                    <div class="card-container">
+                        <div class="card-img">
+                            <!-- image here -->
                         </div>
-                    </section>
 
+                        <div class="card-content">
+                            <h3>Reservaciones</h3>
+                            <form id="frm-reservacion">
+                                <div class="form-row">
+                                    <select id="seleccionarDia" name="days" required>
+                                            <option value = "0">Seleccione el día</option>
+                                            <option value = "doming">Domingo</option>
+                                            <option value = "lunes">Lunes</option>
+                                            <option value = "martes">Martes</option>
+                                            <option value = "miercoles">Miércoles</option>
+                                            <option value = "jueves">Jueves</option>
+                                            <option value = "viernes">Viernes</option>
+                                            <option value = "sabado">Sábado</option>
+                                        </select>
 
+                                    <select id="seleccionarHora" name="Hora" required>
+                                            <option value = "0">Hora</option>
+                                            <option value = "10">10: 00</option>
+                                            <option value = "10">12: 00</option>
+                                            <option value = "10">14: 00</option>
+                                            <option value = "10">16: 00</option>
+                                            <option value = "10">18: 00</option>
+                                            <option value = "10">20: 00</option>
+                                            <option value = "10">22: 00</option>
+                                        </select>
+                                </div>
 
+                                <div class="form-row">
+                                    <input id="nombreCompleto" type="text" placeholder="Nombre Completo" required>
+                                    <select id="seleccioneRestaurante" name="select-restaurantes" required>
+                                            <option value = "0">Seleccione el restaurante</option>
+                                            <option value = "chilis">Chili's</option>
+                                            <option value = "parrillita">La Parrillita De Pepe</option>
+                                            <option value = "nuestraTierra">Nuestra Tierra</option>
+                                            <option value = "Tin-Jo">Tin Jo</option>
+                                        </select>
+                                </div>
 
+                                <!--  <div class="form-rowOne">
+                                        <input type="text" id="nombreCompleto" placeholder="Nombre Completo">
+                                        <div id="ctn-bars-search">
+                                            <input type="text" id="inputSearch" placeholder="Buscar Restaurante">
+                                            <table id="tbl-usuarios">
+                                                <tbody>
+            
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="ctn-icon-search">
+                                            <i class="fas fa-search" id="icon-search"></i>
+                                        </div>
+            
+                                    </div>-->
+
+                                <div class="form-row">
+                                    <input id="cantidPersonas" type="number" placeholder="Cantid. Personas?" min="1" required>
+                                    <input id="btn-reservar" type="submit" value="Reserve una mesa">
+                                    <input type="submit" value="Para llevar">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
 
         </div>
 
@@ -168,7 +150,7 @@
     <!--ScrollReveal-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- <script src="js/pagina-principal.js"></script>-->
-    <script src="js/metodo-pago.js"></script>
-    </body>
+    <script src="js/validarReservaciones.js"></script>
+</body>
 
 </html>

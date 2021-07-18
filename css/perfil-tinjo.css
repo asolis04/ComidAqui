@@ -1,5 +1,12 @@
 body {
     font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    background: #ffff;
 }
 
 #header-principal .superior {
@@ -26,16 +33,6 @@ body {
     height: 130px;
     padding: 0 5%;
     width: 05%;
-}
-
-.logo-restaurante .logo-nuestra-tierra {
-    background-image: url("../img/logo-tinjo.png");
-    background-position: center;
-    background-size: cover;
-    height: 150px;
-    width: 20%;
-    display: block;
-    margin: auto;
 }
 
 .logo-restaurante .logo-tinjo {
@@ -207,67 +204,6 @@ body {
     color: #d7b957;
 }
 
-body {
-    font-family: 'Noto Sans', sans-serif;
-}
-
-* {
-    box-sizing: content-box;
-    margin: 0;
-    padding: 0;
-}
-
- :focus {
-    outline: none;
-}
-
-
-/*Para toda la página*/
-
-body {
-    color: #000000;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 16px;
-}
-
-.container {
-    display: flex;
-    flex-flow: row wrap;
-    text-align: center;
-    width: 80%;
-    margin: auto;
-    background: #ffff;
-}
-
-.aside-navegacion {
-    height: 50px;
-    float: right;
-}
-
-.aside-contenido {
-    background: #ffff;
-    height: 1000px;
-    width: 75%;
-    float: left;
-}
-
-
-/*vivi usuarios*/
-
-.banner-principal {
-    background: #a8293c;
-    padding: 15px 20px 15px 20px;
-}
-
-
-/*vivi usuarios*/
-
-.banner-principal {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 30px;
-}
-
 .footer {
     position: fixed;
     bottom: 0;
@@ -326,81 +262,4 @@ body {
 
 .nav-main ul li a:hover {
     border-bottom: 2px solid #A8293C;
-}
-
-
-/*Navegacion lateral*/
-
-.navegacion ul {
-    width: 250px;
-    height: 100%;
-    list-style: none;
-    padding-bottom: 200px;
-}
-
-.navegacion .menu li.title-menu {
-    padding: 20px;
-    background: #f8f0d8;
-    color: #A8293C;
-    text-align: center;
-    font-size: 22px;
-}
-
-.navegacion .menu a {
-    display: block;
-    padding: 20px;
-    border-bottom: 1px solid #C6D0DA;
-    font-size: 22px;
-    font-weight: 200;
-    text-decoration: none;
-    color: #575D69;
-}
-
-.navegacion .menu a:hover {
-    background: #798DA3;
-    color: #fff;
-}
-
-.navegacion .menu li span.icon-menu {
-    margin-right: 12px;
-}
-
-@media screen and (max-width: 320px) {
-    .navegacion ul {
-        width: 100%;
-    }
-}
-
-@media all and (min-width: 600px) {
-    .aside {
-        flex: 1 0 0;
-    }
-}
-
-@media all and (min-width: 800px) {
-    .side-navegacion {
-        order: 1;
-    }
-    .aside-contenido {
-        order: 3;
-    }
-    .footer {
-        order: 4;
-    }
-}
-
-body {
-    padding: 2em;
-}
-
-.card-body {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-    border-radius: 8px;
-}
-
-form {
-    margin-left: auto;
-    margin-right: auto;
 }
