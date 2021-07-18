@@ -15,8 +15,8 @@ nombrePerfilCliente.innerText = usuarioConectado.nombre;
 correoPerfilCliente.innerText = usuarioConectado.correo;
 fechaNacimientoPerfilCliente.innerText = usuarioConectado.fechaNacimiento;
 cedualPerfilCliente.innerText = usuarioConectado.cedula;
-restauranteUno.innerText = usuarioConectado.restauranteUno;
-restauranteDos.innerText = usuarioConectado.restauranteDos;
-restauranteTres.innerText = usuarioConectado.restauranteTres;
+restauranteUno.innerText = "Nuestra Tierra";
+restauranteDos.innerText = "Tin Jo"; /*usuarioConectado.restauranteDos;*/
+restauranteTres.innerText = "La Parillita";
 
-console.log(usuarioConectado.favoritos.restauranteUno)
+/*console.log(usuarioConectado.favoritos.restauranteUno[])*/

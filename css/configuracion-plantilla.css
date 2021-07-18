@@ -107,13 +107,21 @@ body {
 }
 
 .menu a {
-    display: block;
-    padding: 10px;
+    /* display: block;*/
     border-bottom: 1px solid #C6D0DA;
     font-size: 22px;
     font-weight: 200;
     text-decoration: none;
     color: #A8293C;
+}
+
+.menu a {
+    /*  color: #000000;
+    text-decoration: none;*/
+    text-decoration: none;
+    color: #0000;
+    text-shadow: 0.5px 0.5px 0.5px #A8293C;
+    font-size: 19px;
 }
 
 .menu a:hover {
