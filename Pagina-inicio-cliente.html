@@ -67,8 +67,8 @@
                     <h3>Reservaciones</h3>
                     <form id="frm-reservacion">
                         <div class="form-row">
-                            <select name="days" required>
-                                <option value = "day-select">Seleccione el día</option>
+                            <select id="seleccionarDia" name="days" required>
+                                <option value = "0">Seleccione el día</option>
                                 <option value = "doming">Domingo</option>
                                 <option value = "lunes">Lunes</option>
                                 <option value = "martes">Martes</option>
@@ -78,8 +78,8 @@
                                 <option value = "sabado">Sábado</option>
                             </select>
 
-                            <select name="Hora" required>
-                                <option value = "hour-select">Hora</option>
+                            <select id="seleccionarHora" name="Hora" required>
+                                <option value = "0">Hora</option>
                                 <option value = "10">10: 00</option>
                                 <option value = "10">12: 00</option>
                                 <option value = "10">14: 00</option>
@@ -91,9 +91,9 @@
                         </div>
 
                         <div class="form-row">
-                            <input type="text" placeholder="Nombre Completo" required>
-                            <select required name="select-restaurantes">
-                                <option value = "select-rest">Seleccione el restaurante</option>
+                            <input id="nombreCompleto" type="text" placeholder="Nombre Completo" required>
+                            <select id="seleccioneRestaurante" name="select-restaurantes" required>
+                                <option value = "0">Seleccione el restaurante</option>
                                 <option value = "chilis">Chili's</option>
                                 <option value = "parrillita">La Parrillita De Pepe</option>
                                 <option value = "nuestraTierra">Nuestra Tierra</option>
@@ -118,9 +118,9 @@
                         </div>-->
 
                         <div class="form-row">
-                            <input required type="number" placeholder="Cantid. Personas?" min="1">
-                            <input type="submit" id="btn-reservar" value="Reserve una mesa">
-                            <input type="submit" id="btn-llevar" value="Para llevar">
+                            <input id="cantidPersonas" type="number" placeholder="Cantid. Personas?" min="1" required>
+                            <input id="btn-reservar" type="submit" value="Reserve una mesa">
+                            <input type="submit" value="Para llevar">
                         </div>
                     </form>
                 </div>
@@ -284,7 +284,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- <script src="js/pagina-principal.js"></script>-->
     <script src="js/inicio-sesion.js"></script>
-    <script src="js/reservacion.js"></script>
+    <script src="js/validarReservaciones.js"></script>
 </body>
 
 </html>
