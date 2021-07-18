@@ -147,6 +147,19 @@ body {
     justify-content: space-evenly;
 }
 
+.opcion-menuChiles {
+    background-image: url("/img/comida-chillis.jpg");
+    background-position: right;
+    background-size: cover;
+    height: 450px;
+    width: 50%;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .info-restaurante h2 {
     font-size: 24px;
     font-weight: 700;
@@ -225,9 +238,6 @@ body {
 }
 
 .container {
-    display: flex;
-    flex-flow: row wrap;
-    text-align: center;
     width: 80%;
     margin: auto;
     background: #ffff;

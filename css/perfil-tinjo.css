@@ -38,6 +38,16 @@ body {
     margin: auto;
 }
 
+.logo-restaurante .logo-tinjo {
+    background-image: url("../img/logo-tinjo.png");
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    width: 20%;
+    display: block;
+    margin: auto;
+}
+
 .info-restaurante h2 {
     margin-top: 8%;
 }

@@ -120,7 +120,6 @@
                         <div class="form-row">
                             <input id="cantidPersonas" type="number" placeholder="Cantid. Personas?" min="1" required>
                             <input id="btn-reservar" type="submit" value="Reserve una mesa">
-                            <input type="submit" value="Para llevar">
                         </div>
                     </form>
                 </div>
@@ -161,28 +160,28 @@
         <h2 class="h2-mismo" id="favoritos">Favoritos</h2>
         <div class="restaurante-card">
             <div>
-                <img src="img/chilis.jpg" alt="Restaurante chilis">
-                <h3>Chili's.</h3>
+                <img src="img/restaurante-tin-jo.jpg" alt="Restaurante Nuestra Tierra">
+                <h3>Lorem, ipsum dolor.</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
-                <a href="#">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
+                <a href="/perfil-TinJo.html">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
             </div>
             <div>
                 <img src="img/laParillitaPepe.jpg" alt="Restaurante La parrillita Pepe">
                 <h3>Lorem, ipsum dolor.</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
-                <a href="#">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
+                <a href="perfill-parrillita.html">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
             </div>
             <div>
                 <img src="img/nuestra-tierra.png" alt="Restaurante Nuestra Tierra">
                 <h3>Lorem, ipsum dolor.</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
-                <a href="#">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
+                <a href="/perfil-nuestra-tierra.html">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
             </div>
             <div>
-                <img src="img/restaurante-tin-jo.jpg" alt="Restaurante Nuestra Tierra">
-                <h3>Lorem, ipsum dolor.</h3>
+                <img src="img/chilis.jpg" alt="Restaurante chilis">
+                <h3>Chili's.</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
-                <a href="#">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
+                <a href="/perfil-chilis.html">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
             </div>
 
         </div>
@@ -192,30 +191,29 @@
         <h2 class="h2-mismo" id="recientes">Recientes</h2>
         <div class="restaurante-card">
             <div>
-                <img src="img/chilis.jpg" alt="Restaurante chilis">
-                <h3>Chili's.</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <a href="#">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
-            </div>
-            <div>
-                <img src="img/laParillitaPepe.jpg" alt="Restaurante La parrillita Pepe">
+                <img src="img/restaurante-tin-jo.jpg" alt="Restaurante Nuestra Tierra">
                 <h3>Lorem, ipsum dolor.</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
-                <a href="#">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
+                <a href="/perfil-TinJo.html">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
             </div>
             <div>
                 <img src="img/nuestra-tierra.png" alt="Restaurante Nuestra Tierra">
                 <h3>Lorem, ipsum dolor.</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
-                <a href="#">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
+                <a href="/perfil-nuestra-tierra.html">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
             </div>
             <div>
-                <img src="img/restaurante-tin-jo.jpg" alt="Restaurante Nuestra Tierra">
+                <img src="img/chilis.jpg" alt="Restaurante chilis">
+                <h3>Chili's.</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="/perfil-chilis.html">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
+            </div>
+            <div>
+                <img src="img/laParillitaPepe.jpg" alt="Restaurante La parrillita Pepe">
                 <h3>Lorem, ipsum dolor.</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
-                <a href="#">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
+                <a href="perfill-parrillita.html">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
             </div>
-
         </div>
         <!--Unanse a nosotros-->
         <section class="form-nosotros" id="unase">
@@ -230,20 +228,20 @@
                     <p><span class="fa fa-mobile"></span>89021548</p>
                 </section>
             </section>
-            <form action="" class="form-contact">
+            <form action="" class="form-contact" id="frm-info">
                 <h3>Comunicate con nosotros!</h3>
                 <div class="user-info">
                     <label for="names">Nombre *</label>
-                    <input type="text" id="names">
+                    <input type="text" id="names" required>
 
                     <label for="phone">Telefono / Celular </label>
                     <input type="text" id="phone">
 
                     <label for="email">Correo electronico*</label>
-                    <input type="text" id="email">
+                    <input type="text" id="email" required>
 
                     <label for="mensaje">Mensaje *</label>
-                    <textarea id="mensaje"></textarea>
+                    <textarea id="mensaje" required></textarea>
 
                     <input type="button" value="Enviar Información" id="btn">
 
@@ -285,6 +283,7 @@
     <!-- <script src="js/pagina-principal.js"></script>-->
     <script src="js/inicio-sesion.js"></script>
     <script src="js/validarReservaciones.js"></script>
+    <script src="js/validarComunicate.js"></script>
 </body>
 
 </html>
