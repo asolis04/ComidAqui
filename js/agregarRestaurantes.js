@@ -12,6 +12,7 @@ const inputCantón = document.querySelector('#txtCantón');
 const inputAbre = document.querySelector('#txtAbre');
 const inputCierra = document.querySelector('#txtCierra');
 const btnRegistar = document.querySelector('#btnRegistar');
+const btnBorrar=document.querySelector('btnBorrar');
 
 let checkbox1 = document.querySelector('#Domingo').checked;
 let checkbox2 = document.querySelector('#Lunes').checked;
@@ -85,6 +86,9 @@ const validar=() =>{
     } if (checkbox2 = document.querySelector('#Lunes').checked == valor) {
 
         console.log(" Lunes");
+    } else{
+        error=true;
+        inputCantón.classList.add('error');
     }
     if (document.querySelector('#Martes').checked == valor) {
         console.log("Martes");
@@ -140,8 +144,6 @@ const validar=() =>{
     } else {
         obtenerDatos();
       
-   
-
     }
     
     
@@ -181,3 +183,6 @@ const validar=() =>{
   
     //evento , cuando al boton se le da click se ejecuta la funcion de obtener datos 
     btnRegistar.addEventListener('click',validar);// aqui 
+    
+
+    
