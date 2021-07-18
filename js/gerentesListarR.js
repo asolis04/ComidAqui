@@ -35,7 +35,7 @@ const validar=() =>{
     if (error == false) {
         Swal.fire({
             icon: 'success',
-            title: 'Se agregó correctamente el Gerente '
+            title: 'Se agregó correctamente el encargado '
         })
     }
     if (error == true) {
