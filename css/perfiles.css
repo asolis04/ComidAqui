@@ -59,10 +59,6 @@
             border-bottom: 2px solid #A8293C;
         }
         
-        .ocultar {
-            display: none;
-        }
-        
         #FotoUsuario {
             width: 200px;
             height: 200px;
@@ -126,4 +122,8 @@
             text-align: center;
             padding-bottom: 20px;
             font-size: 17px;
+        }
+        
+        .ocultar {
+            display: none;
         }

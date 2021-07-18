@@ -12,11 +12,6 @@ const enlaceComentarios = document.querySelector('#admin-comentarios');
 const enlaceReportes = document.querySelector('#admin-reportes');
 const enlaceCerrar = document.querySelector('#enlaceCerrar');
 
-
-
-
-
-
 /*Para las funcionalidades */
 
 let usuarioSesionNav = JSON.parse(localStorage.getItem('usuarioConectado'));
@@ -46,7 +41,7 @@ if (!usuarioSesionNav) {
     }
 }
 
-
+console.log(usuarioSesionNav)
 
 /*Ocultar las páginas */
 enlaceCerrar.addEventListener('click', () => {
