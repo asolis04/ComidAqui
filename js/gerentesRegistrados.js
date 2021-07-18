@@ -8,16 +8,16 @@
 // 5 --> pendiente de cambio de contraseña
 
 let listaUsuarios = [{
-    nombreDelGerente: 'Ada Calderón Olivares ',
-    correo:'acalderon@gmail.com',
+    nombreDelGerente: '	Alejandra Delgado Barrón  ',
+    correo:'ale-delgado@gmail.com',
     restaurante: 'Chilis'
 }, {
-    nombreDelGerente: 'Ana Solís Rostrán',
-    correo: 'asolis@gmail.com',
+    nombreDelGerente: 'Juan Miguel Acosta ',
+    correo: 'a_miguel@gmail.com',
     restaurante: 'La Parrillita de Pepe'
 }, {
-    nombreDelGerente: 'Kayla Baylis Fernández',
-    correo:  'kbaylis@gmail.com',
+    nombreDelGerente: 'Karla Paulette Gómez Vargas',
+    correo:  'kpaulette-g-v@gmail.com',
     restaurante: 'Restaurante Nuestra Tierra'
 
 }, {
@@ -28,8 +28,8 @@ let listaUsuarios = [{
 
 
 }, {
-    nombreDelGerente: 'Danny Cruz González',
-    correo: 'dcruz@gmail.com',
+    nombreDelGerente: 'Danna Verónica Herrera Arias',
+    correo: 'dannaVero-h@gmail.com',
     restaurante: 'Tsunami Sushi'
 }];
 
