@@ -77,21 +77,27 @@
 }
 
 button#btnRegistar {
-    width: 87px;
-    height: 27px;
-    font-size: 18px;
-    border-style: inherit;
+    background: #A8293C;
+    border: 3px solid #A8293C;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
     border-radius: 12px;
-    background-color: #a8293c;
+    cursor: pointer;
 }
 
 button#Borrar {
-    width: 89px;
-    height: 27px;
-    font-size: 18px;
-    border-style: inherit;
+    background: #A8293C;
+    border: 3px solid #A8293C;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
     border-radius: 12px;
-    background-color: #a8293c;
+    cursor: pointer;
 }
 
 .registarTiempo :hover {

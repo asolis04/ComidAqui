@@ -24,6 +24,10 @@ input[type="button"]:hover {
     background: #4d0e18;
 }
 
+input[type="text"] {
+    border-bottom: 2px solid #D1D1D1;
+}
+
 textarea {
     display: block;
     width: 80%;

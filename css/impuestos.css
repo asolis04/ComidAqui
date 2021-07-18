@@ -2,6 +2,10 @@
     width: 80%;
 }
 
+.buscar {
+    font-weight: bold;
+}
+
 #banner-impuestos {
     text-align: center;
 }
