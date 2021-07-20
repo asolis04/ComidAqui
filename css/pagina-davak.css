@@ -554,7 +554,8 @@
                 color: #fff;
             }
             .restaurante-card,
-            .servicios-card {
+            .servicios-card,
+            .equipo-trabajo {
                 grid-template-columns: repeat(2, 1fr);
             }
             .banner {
@@ -572,11 +573,13 @@
         
         @media (max-width: 500px) {
             .restaurante-card,
-            .servicios-card {
+            .servicios-card,
+            equipo-trabajo {
                 grid-template-columns: 1fr;
             }
             .restaurante-card .content,
-            .servicios-card .content {
+            .servicios-card .content,
+            .equipo-trabajo .content {
                 width: 100%;
                 padding: 60px 20px;
             }
