@@ -29,6 +29,7 @@ if (!usuarioSesionNav) {
             enlaceTiempoReserva.classList.add('ocultar');
             enlaceConfigPlatos.classList.add('ocultar');
             enlaceComentarios.classList.add('ocultar');
+            enlaceGerente.classList.add('ocultar')
             break;
         case 'dueno':
             enlaceUsuarios.classList.add('ocultar');

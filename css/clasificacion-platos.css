@@ -167,3 +167,72 @@ form {
     margin-left: auto;
     margin-right: auto;
 }
+
+.container {
+    width: 80%;
+}
+
+#sctForm {
+    align-items: center;
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-block;
+}
+
+#btnGuardar {
+    background: #D7B957;
+    border: 3px solid #D7B957;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+}
+
+#btnGuardar :hover {
+    background-color: rgb(159, 182, 175);
+    color: #D7B957;
+}
+
+#btnBorrar {
+    background: #D7B957;
+    border: 3px solid #D7B957;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+}
+
+#btnBorrar :hover {
+    background-color: #fff;
+    color: #D7B957;
+}
+
+.error {
+    border: 2px solid #D7B957;
+}
+
+#txtClasificacion {
+    display: flex;
+    justify-content: space-around;
+    width: 120%;
+}
+
+#txtCaracteristicas {
+    display: flex;
+    justify-content: space-around;
+    width: 120%;
+}
+
+#cbox {
+    height: 20px;
+}
+
+h2 {
+    font-weight: 900;
+    color: #582E44;
+}

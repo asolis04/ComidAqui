@@ -85,51 +85,81 @@
             <div id="segundParte">
                 <div id="conf-clasificacion-platos">
 
-                    <div>
-                        <label for="txt-usuario">Nombre del plato:</label>
-                        <input type="text" id="txt-usuario" required>
-                    </div>
-                    <div>
-                        <label for="txt-descripcion-plato">Descripción del plato</label>
-                        <textarea id="txt-descripcion-plato" required></textarea>
-                    </div>
-                    <div>
-                        <label for="txt-precio">Precio:</label>
-                        <input type="number" id="txt-precio" required>
-                    </div>
-                    <div>
-                        <label for="txt-impuesto">Precio con impuesto:</label>
-                        <input type="number" id="txt-impuesto" required>
-                    </div>
-                    <div>
-                        <label for="subir foto">Subir foto:</label>
-                        <input type="file" id="subir foto" value="image/*">
-                    </div>
+                    <br>
+                    <section id="sctForm">
+                        <h2>Características y clasificación de los platos</h2>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <form>
+                            <div>
+                                <label for="">Restaurante</label>
+                                <select id="slt-restaurante" required>
+                                    <option value="">- Seleccionar restaurante -</option>
+                                    <option value="Chilis">Chili´s</option>
+                                    <option value="Parrillita">La Parrillita de Pepe</option>
+                                    <option value="NuestraTierra">Nuestra Tierra</option>
+                                    <option value="TsunamiSushi">Tsunami Sushi</option>
+                                    <option value="TinJo">Tin Jo</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="txt-usuario">Buscar plato:</label>
+                                <input type="search" id="txt-usuario" required>
+                            </div>
+                            <br>
+                            <br>
 
-                    <section>
-                        <div class="card-body">
-                            <h5>Craracterísticas especiales</h5>
+                            <div>
+                                <label for="">Características especiales</label>
+                                <select id="libreGluten" required>
+                                    <option value="">- Seleccione una opción -</option>
+                                    <option value="libreGluten">Libre de gluten</option>
+                                    <option value="Contiene gluten">Contiene gluten</option>                 
+                                </select>
+                                <select id="bajoCalorias" required>
+                                    <option value="">- Seleccione una opción -</option>
+                                    <option value="Bajo en calorías">Bajo en calorías</option>
+                                    <option value="Más de 500 calorías">Más de 500 calorías</option>                                                                 
+                                </select>
+                                <select id="vegano" required>
+                                    <option value="">- Seleccione una opción -</option>
+                                    <option value="Vegano">Vegano</option>
+                                    <option value="No vegano">No vegano</option>                                                                 
+                                </select>
+                                <select id="vegetariano" required>
+                                    <option value="">- Seleccione una opción -</option>
+                                    <option value="Vegetariano">Vegetariano</option>
+                                    <option value="No vegetariano">No vegetariano</option>                                                                 
+                                </select>
+                                <select id="picante" required>
+                                    <option value="">- Seleccione una opción -</option>
+                                    <option value="Picante">Picante</option>
+                                    <option value="Sin picante">Sin picante</option>                                                                 
+                                </select>
+                            </div>
+                            <br>
+                            <br>
+                            <div>
+                                <label for="">Clasificación</label>
+                                <select id="clasificacion" required>
+                                    <option value="">- Seleccione una opción -</option>
+                                    <option value="Entrada">Entrada</option>
+                                    <option value="Ensalada">Ensalada</option>
+                                    <option value="Plato fuerte">Plato fuerte</option>
+                                    <option value="Postre">Postre</option>                    
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <button type="button" id="btnGuardar">Guardar</button>
+                                <button type="reset" id="btnBorrar">Borrar</button>
+                            </div>
 
-                            <label>
-                            <input type="checkbox" id="cbox" value="checkbox"> Libre de gluten</label><br>
-                            <input type="checkbox" id="cbox" value="checkbox"> Bajo en calorías</label><br>
-                            <input type="checkbox" id="cbox" value="checkbox"> Vegano</label><br>
-                            <input type="checkbox" id="cbox" value="checkbox"> Vegetariano</label><br>
-                            <input type="checkbox" id="cbox" value="checkbox"> Picante</label><br>
-                        </div>
-
-                        <div class="card-body">
-                            <h5>Clasificación del plato</h5>
-                            <label>
-                            <input type="checkbox" id="cbox" value="checkbox"> Entrada</label><br>
-                            <input type="checkbox" id="cbox" value="checkbox"> Ensalada</label><br>
-                            <input type="checkbox" id="cbox" value="checkbox"> Plato principal</label><br>
-                            <input type="checkbox" id="cbox" value="checkbox"> Postre</label><br>
-                        </div>
+                        </form>
                     </section>
-
-                    <button type="submit" id="guardar">Guardar información</button>
-                    <input type="reset" value="Borrar">
                 </div>
 
             </div>
@@ -154,6 +184,7 @@
     <!--Script-->
 
     <script src="/js/listarClasificacion-platos.js"></script>
+    <script src="/js/clasificacion-platos.js"></script>
 </body>
 
 </html>
