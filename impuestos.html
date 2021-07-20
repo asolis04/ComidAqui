@@ -72,41 +72,59 @@
             <div id="segundParte">
                 <div id="conf-impuestos">
 
-                    <!--Vivi Impuestos-->
-
-                    <section id="impuestos-foto">
-                        <div class=img-estructure>
-                            <label class="buscar" for="txt-buscar">Buscar:</label>
-                            <input type="text" id="txt-buscar"> <i class="far fa-file-search"></i>
-
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="txtNombreImpuesto">Nombre del Impuesto: </label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" id="txtNombreImpuesto" required>
+                            </div>
                         </div>
-                    </section>
-                    <br/><br/>
-                    <form id="form-impuestos">
-                        Nombre del impuesto: <input type="text" /> <br/><br/> Total: <input type="text" /> <br/><br/>
+                        <div class="form-group">
+                            <label for="txtMontoImpuesto" class="col-sm-2 control-label">Monto del Impuesto: </label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" id="txtMontoImpuesto" required>
+                            </div>
+                        </div>
 
+
+
+                        <div class="boton-buscar-impuestos">
+                            <div id="boton-buscar-impuestos" class="col-sm-offset-2 col-sm-10">
+                                <button type="button" id="btnRegistrar">Registrar</button>
+                                <button type="button" id="btnEditar">Editar</button>
+                                <button type="button" id="btnActivar">Activar</button>
+                                <button type="button" id="btnDesactivar">Desactivar</button>
+                                <button type="button" id="btnEliminar">Eliminar</button>
+                            </div>
+                        </div>
                     </form>
-
-                    <div class="boton-buscar-impuestos">
-
-                        <input type="button" value="Registrar">
-                        <input type="button" value="Editar">
-                        <input type="button" value="Activar">
-                        <input type="button" value="Desactivar">
-                        <input type="button" value="Eliminar">
-                    </div>
-                    </aside>
-                    <!--Vivi Impuestos-->
 
                 </div>
 
                 <div id="listar-impuestos" class="listarImpuestos">
 
-                    <di>
-                        <p>Lista Impuestos</p>
-                        <label for="txt-filtro">Filtrar:</label>
-                        <input type="text" id="txt-filtro">
-                    </di>
+                    <main>
+                        <section id="sctImpuesto">
+                            <div>
+                                <label for="txtFiltro">Filtrar:</label>
+                                <input type="text" id="txtFiltro">
+                            </div>
+                            <table id="tblImpuesto">
+                                <thead>
+                                    <tr>
+
+                                        <th>Nombre de Impuesto</th>
+                                        <th>Monto de Impuesto</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+
+                        </section>
+                    </main>
 
                 </div>
             </div>
@@ -120,6 +138,8 @@
     <!--Script-->
     <script src="/js/configuracion-nav.js"></script>
     <script src="/js/impuesto.js"></script>
+    <script src="js/lista-impuestos.js"></script>
+    <script src="js/listar-impuesto.js"></script>
 </body>
 
 </html>

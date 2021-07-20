@@ -16,18 +16,6 @@
     text-align: center
 }
 
-#botones-principal input[type="button"] {
-    background: #A8293C;
-    border: 3px solid #A8293C;
-    color: #fff;
-    text-decoration: none;
-    padding: 12px 28px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    border-radius: 12px;
-    cursor: pointer;
-}
-
 #form-Usuarios input[type="text"],
 #form-Usuarios input[type="date"],
 #form-Usuarios select {
@@ -41,6 +29,62 @@
     font-weight: 400;
 }
 
-#botones-principal input[type="button"]:hover {
-    background: #4d0e18;
+#btnRegistrar {
+    background: #A8293C;
+    border: 3px solid #A8293C;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#btnEditar {
+    background: #A8293C;
+    border: 3px solid #A8293C;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#btnActivar {
+    background: #A8293C;
+    border: 3px solid #A8293C;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#btnDesactivar {
+    background: #A8293C;
+    border: 3px solid #A8293C;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#btnEliminar {
+    background: #A8293C;
+    border: 3px solid #A8293C;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    cursor: pointer;
 }
