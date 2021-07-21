@@ -120,13 +120,6 @@
     padding-left: 0.75%;
 }
 
-#como_lo_hacemos h2 {
-    font-size: 22px;
-    text-align: center;
-    font-weight: 800;
-    text-decoration: underline #ef1111c4;
-}
-
 #como_lo_hacemos p {
     text-align: center;
     line-height: 1.41em;
@@ -182,6 +175,17 @@ h2 {
     text-align: center;
     line-height: 1.35em;
     font-size: 50px;
+    margin: 2px;
+    line-height: normal;
+    letter-spacing: normal;
+    width: 100%;
+    padding-left: 0.75%;
+}
+
+h3 {
+    color: rgb(223, 12, 12);
+    text-align: center;
+    line-height: 1.35em;
     margin: 2px;
     line-height: normal;
     letter-spacing: normal;

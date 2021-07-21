@@ -7,7 +7,6 @@ const inputCedula = document.querySelector('#txtCedula');
 const inputContrasenha = document.querySelector('#txtContrasenha');
 const btnGuardar = document.querySelector('#btnGuadar');
 
-
 const validar = () => {
 
     let error = false;
@@ -54,6 +53,12 @@ const validar = () => {
         });
     } else {
         obtenerDatos();
+        Swal.fire({
+            'icon': 'success',
+            'title': 'Actualización exitosa',
+            'text': 'Los cambios han sido guardados',
+            'confirmButtonText': 'Entendido'
+        })
     }
 
 
@@ -61,11 +66,11 @@ const validar = () => {
 };
 
 
-// forma mas aactual de crear una funciom
-//funcion 
+// Crear función
+//Función 
 const obtenerDatos = () => {
-    //enlazar el boton 
-    // variable nombre es local en obtener datos 
+    //Enlazar botón 
+    // Variables son locales en obtener datos 
     let nombre = inputNombre.value;
 
     let correo = inputCorreo.value;
@@ -79,10 +84,10 @@ const obtenerDatos = () => {
     let contrasenha = inputContrasenha.value;
 
     console.log(nombre, correo, fechaNacimiento, tipoCedula, cedula, contrasenha);
-    // value sacando el valor de la caja de texto
+    // Value saca el valor de la caja de texto
 
 
 
 };
-//evento , cuando al boton se le da click se ejecuta la funcion de obtener datos 
+//Evento, cuando se le da click al botón se ejecuta la funcion de obtener datos  
 btnGuardar.addEventListener('click', validar);
