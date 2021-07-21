@@ -1,8 +1,8 @@
 'use strict';
 
 let listaSolicitudes = [{
-        nombre: 'Tatiana Fallas Castillo',
-        correo: 'tfallas@gmail.com',
+        nombre: 'Ada Calderón Olivares',
+        correo: 'acalderon@gmail.com',
 
     },
     {
@@ -23,6 +23,9 @@ const obtenerSolicitudes = () => {
 const tabla = document.querySelector('#tbl-usuarios tbody');
 const inputFiltro = document.querySelector('#txt-filtro');
 let coleccionSolicitudes = obtenerSolicitudes();
+
+const btnaceptar = document.getElementById('boton-agregar');
+const btnrechazar = document.getElementById('boton-eliminar');
 
 
 
@@ -45,3 +48,23 @@ const mostrarSolicitudes = () => {
 mostrarSolicitudes();
 
 inputFiltro.addEventListener('keyup', mostrarSolicitudes);
+
+
+/*Llamar los formularios del usuario ya sea listar o configurar */
+btnaceptar.addEventListener('click', () => {
+    Swal.fire({
+        'icon': 'success',
+        'title': 'Usuario Aceptado',
+        'text': 'Se ha aceptado al usuario correctamente',
+        'confirmButtonText': 'Entendido'
+    });
+});
+
+btnrechazar.addEventListener('click', () => {
+    Swal.fire({
+        'icon': 'warning',
+        'title': 'Usuario rechazado',
+        'text': 'No se ha ceptado al usuario',
+        'confirmButtonText': 'Entendido'
+    });
+});
