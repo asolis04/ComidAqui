@@ -5,19 +5,19 @@ let listaMetodosPago = [{
     numeroTarjeta: '9874 6312 5656 5046',
     fechaExpiracion: '01/07/2023',
     cvc: '320',
-    nombreTarjeta: 'Danny Cruz Gonzalez',
+    nombreTarjeta: 'Kayla Baylis Fernández',
 }, {
     tipoTarjeta: 'Master Card',
     numeroTarjeta: '3251 6561 9879 3203',
     fechaExpiracion: '01/02/2022',
     cvc: '651',
-    nombreTarjeta: 'Vivian Martin Ramirez',
+    nombreTarjeta: 'Kayla Baylis Fernández',
 }, {
     tipoTarjeta: 'American Express',
     numeroTarjeta: '6555 3516 2135 5648',
     fechaExpiracion: '01/11/2024',
     cvc: '180',
-    nombreTarjeta: 'Danny Cruz Gonzalez',
+    nombreTarjeta: 'Kayla Baylis Fernández',
 }, ]
 const obtenerMetodosPago = () => {
     return listaMetodosPago;
